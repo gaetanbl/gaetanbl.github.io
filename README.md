@@ -135,7 +135,7 @@
         .content {
             margin-left: 240px;
             padding: 3rem 2.5rem 3rem 1.5rem;
-            max-width: 800px;
+            max-width: 1200px;
             box-sizing: border-box;
         }
 
