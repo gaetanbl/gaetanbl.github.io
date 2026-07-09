@@ -333,10 +333,10 @@
         <!-- VAN CONVERSION SECTION (LEFT EMPTY) -->
         <section id="van-conversion">
             <h2>🚐 Van conversion: A brief summary of my personality</h2>
-            <img class="project-img" src="images/van-project.jpg" alt="[Insert your Van photo here]">
-
             <p>This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.</p>
             <p>While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with frinds, or trekking alone for 4 days in the Dolomites sleeping under the stars.</p>
+
+            <img class="project-img" src="images/van-project.jpg" alt="[Insert your Van photo here]">
         </section>
 
         <!-- GMA INTERNSHIPS (MOVED HERE & UPDATED WITH REAL EXP) -->
@@ -372,7 +372,7 @@
 
         <!-- AI PROJECT 1 (LEFT EMPTY) -->
         <section id="ia-project-1">
-            <h2>🧠 AI Project n°1: Supervised Learning Pipeline</h2>
+            <h2>🧠 AI Project n°1: Supervised Learning Pipeline for food detection</h2>
             <p>Implementation with a 70 hour-video tuto on google scholar an AI thaht have leanred to reconized foods </p>
             
             <img class="project-img" src="images/ros2-project.jpg" alt="[Insert your ROS2 map/nodes photo here]">
