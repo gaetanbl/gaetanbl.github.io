@@ -323,10 +323,10 @@
 
         <section id="introduction">
             <h2>📌 Introduction</h2>
-            <p>Welcome to my personal project documentation environment. As a Mechanical and Control Engineering (GMA) student at INSA Rennes, this space serves to highlight my practical execution of control loops, structural modeling, and robotic integrations.</p>
+            <p>Welcome to my personal project portfolio.</p>
             
             <blockquote class="prompt-info">
-                <span><strong>Looking for a final-year internship:</strong> Seeking a 4 to 5-month placement starting March 2027 focusing on AI and Robotics workflows. Refer to "My CV.eng.pdf" or my live Canva link for summary details.</span>
+                <span><strong>This page is currently being created.</span>
             </blockquote>
         </section>
 
@@ -336,55 +336,29 @@
             <!-- Left empty as requested -->
             <p></p>
             <img class="project-img" src="images/van-project.jpg" alt="[Insert your Van photo here]">
+
+            <p>Thos not my first but one of the project that I'm the most proud of. During 3years when I  came back home during holidays and with the help of my grand father I convert a van to go on adventure. I'm found of sport but in reality, it's go on adventure that I prefere, I known for sleeping by -15°C or under a kayak because of the rain by my friend. My best memories are during trips, my CV is clean but in reality people generally describe me as a sociable and cheerful person. Whether is go 5 days for the tour of belle-ile, do a train trip in europe or go walk 4 days lonely sleeping outside (literaly) in the dolomite</p>
         </section>
 
         <!-- GMA INTERNSHIPS (MOVED HERE & UPDATED WITH REAL EXP) -->
         <section id="gma-internships">
             <h2>🎓 Mechanical & Control Engineering (GMA) Track: 3 Core Internships</h2>
-            <p>To explicitly illustrate my validation of GMA principles (materials science, prototyping, CAD, and robot kinematics), these three industrial experiences highlight my progression:</p>
-            
-            <img class="project-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Industrial Engineering">
-
-            <ul>
-                <li>
-                    <strong>XSun — Structural Engineering Placement (3 months):</strong> 
-                    Contributed to the conceptual study of lightweight, optimized composite materials. Handled the 3D modeling and precision technical drawing of the structural layout for a new autonomous solar-powered VTOL drone model using advanced CAD packages.
-                </li>
-                <li>
-                    <strong>Decathlon France — 3D Printing & Materials Technician at ADDLAB (2 months):</strong> 
-                    Supervised the resin 3D printing production line from software parameterization to physical finishing. Ran an internal R&D project validating a brand-new material matrix for Selective Laser Sintering (SLS). Contributed directly to futuristic rapid prototyping jobs, including custom bicycle frames and bespoke aerospace component concepts for the ESA.
-                </li>
-                <li>
-                    <strong>Safran / Metallicadour — Robotic Arm Integration (1 month + Academic Continuation):</strong> 
-                    Shadowed specialized research engineers deploying industrial automated solutions utilizing a high-payload KUKA robotic arm within the aerospace manufacturing ecosystem. 
-                    <br><em>GMA Academic Link:</em> Leveraging this exposure, I successfully applied complex theoretical kinematics during my 4th year at INSA Rennes by completely rewriting the mathematical control software for a Stäubli SCARA robot in MATLAB, which we successfully validated through experimental physical lab tests.
-                </li>
-            </ul>
+            <p>Even if now I'm in robotics, I have done the chooce to do a mechanical and control degree (GMA), and I think the differents intership that I have done summarise well what consists GMA. In XSun I have used finite elements and material knowledge, in ADDLAB it was 3D moddelling and  and finally at Metallicadour (Academic Continuation) the use and compehension of robotic arm. I could add that I have learned also math and physics in general like CFD or EDP<img class="project-img" src="images/van-project.jpg" alt="Industrial Engineering">
         </section>
 
         <!-- INS'AERIEN ASSOCIATION SECTION -->
         <section id="ins-aerien">
             <h2>✈️ President of the INS'Aérien Association</h2>
-            <p>Founded and managed an open-access FPV drone club at INSA Rennes, creating a complete environment to bridge high-speed custom hardware assembly with physical deployment cycles.</p>
+            <p>Founded and managed an open-access FPV drone club at INSA Rennes.</p>
 
-            <img class="project-img" src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=800&q=80" alt="FPV Drone Testing">
+            <img class="project-img" src="images/van-project.jpg" alt="FPV Drone Testing">
 
-            <ul>
-                <li><strong>Hardware Performance:</strong> Built customized FPV drones entirely from scratch capable of accelerating from 0 to 100 km/h in 2.2 seconds.</li>
-                <li><strong>Operations Scale:</strong> Expanded the organization to include 9 active internal members, successfully building 3 functional drones and producing over 20 video clips and festival captures.</li>
-                <li><strong>Leadership Value:</strong> Developed professional competence in budget management, corporate communications (further developed as Communications Manager for the GMA Corporate White Week), and team cross-collaboration under dynamic schedules.</li>
-            </ul>
         </section>
 
         <!-- CODE PROJECT 1 -->
         <section id="code-project-1">
             <h2>⚙️ Code Project n°1: Robotics Club inside the French Robotics Cup</h2>
             <p>Embedded systems programming and algorithmic coordination within the INSA Rennes school robotics club.</p>
-            <ul>
-                <li><strong>Competition Testing:</strong> Deployed and tested competitive routines in high-stress settings during the French Robotics Cup (Senior Category), achieving a strong 42nd place finish out of 121 teams nationwide.</li>
-                <li><strong>Low-level Architecture:</strong> Developed object-oriented structures in C++ integrated with Git version control to ensure responsive sensor reading and precise trajectory execution.</li>
-                <li><strong>Legacy:</strong> Built on top of my foundational background as a 2021 RoboCup Junior World Champion in Bangkok, Thailand, emphasizing robust coordination and performance under strict competition timelines.</li>
-            </ul>
         </section>
 
         <!-- CODE PROJECT 2 (LEFT EMPTY) -->
@@ -400,20 +374,16 @@
             <h2>🧠 AI Project n°1: Supervised Learning Pipeline</h2>
             <!-- Left empty as requested -->
             <p></p>
+            <img class="project-img" src="images/ros2-project.jpg" alt="[Insert your ROS2 map/nodes photo here]">
         </section>
 
         <!-- AI PROJECT 2 -->
         <section id="ia-project-2">
-            <h2>🤖 AI Project n°2: Simulation and Guidance of Autonomous Robots by Reinforcement Learning</h2>
+            <h2>🤖 AI Project n°2: Simulation and Guidance of duckiebot by Reinforcement Learning</h2>
             <p>Direct implementation and training of end-to-end learning agents inside next-generation physical simulators.</p>
 
             <img class="project-img" src="https://images.unsplash.com/photo-1617791160505-6f006e121980?auto=format&fit=crop&w=800&q=80" alt="Neural Network Simulation">
 
-            <ul>
-                <li><strong>Scalian Deployment:</strong> Modeled a physical 'Duckiebot' robot platform in simulation environments to train, evaluate, and scale deep reinforcement learning loops.</li>
-                <li><strong>Algorithmic Fine-Tuning:</strong> Adjusted learning hyper-parameters and reward algorithms using Proximal Policy Optimization (PPO) variants inside PyTorch to achieve reliable guidance behavior.</li>
-                <li><strong>Physical Target:</strong> Designed optimal reward metrics to transfer trained policies successfully into clean autonomous navigation behaviors on real embedded platforms.</li>
-            </ul>
         </section>
     </div>
 
