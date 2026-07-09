@@ -326,7 +326,7 @@
             <p>Welcome to my personal project portfolio.</p>
             
             <blockquote class="prompt-info">
-                <span><strong>This page is currently being created.</span>
+                <span><strong>This page is currently being modified.</strong></span>
             </blockquote>
         </section>
 
@@ -337,13 +337,15 @@
             <p></p>
             <img class="project-img" src="images/van-project.jpg" alt="[Insert your Van photo here]">
 
-            <p>Thos not my first but one of the project that I'm the most proud of. During 3years when I  came back home during holidays and with the help of my grand father I convert a van to go on adventure. I'm found of sport but in reality, it's go on adventure that I prefere, I known for sleeping by -15°C or under a kayak because of the rain by my friend. My best memories are during trips, my CV is clean but in reality people generally describe me as a sociable and cheerful person. Whether is go 5 days for the tour of belle-ile, do a train trip in europe or go walk 4 days lonely sleeping outside (literaly) in the dolomite</p>
+            <p>This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.</p>
+            <p>While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île, interrailing across Europe, or trekking alone for 4 days in the Dolomites, literally sleeping under the stars.</p>
         </section>
 
         <!-- GMA INTERNSHIPS (MOVED HERE & UPDATED WITH REAL EXP) -->
         <section id="gma-internships">
             <h2>🎓 Mechanical & Control Engineering (GMA) Track: 3 Core Internships</h2>
-            <p>Even if now I'm in robotics, I have done the chooce to do a mechanical and control degree (GMA), and I think the differents intership that I have done summarise well what consists GMA. In XSun I have used finite elements and material knowledge, in ADDLAB it was 3D moddelling and  and finally at Metallicadour (Academic Continuation) the use and compehension of robotic arm. I could add that I have learned also math and physics in general like CFD or EDP<img class="project-img" src="images/van-project.jpg" alt="Industrial Engineering">
+            <p>Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed perfectly summarize what GMA is all about. </p>
+            <p>At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, at <strong>Metallicadour</strong> (and through my academic continuation), I mastered the operation and control theory of industrial robotic arms. Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD) and Partial Differential Equations (PDE).</p>
         </section>
 
         <!-- INS'AERIEN ASSOCIATION SECTION -->
