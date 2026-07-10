@@ -421,7 +421,7 @@
        ========================================================================== */
     .hero-layout-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.2fr 1.2fr;
       gap: 4rem;
       align-items: center;
       margin-bottom: 2rem;
@@ -857,19 +857,6 @@
             </a>
           </div>
         </div>
-
-        /*<!-- Right Side: 2x2 beautiful grid of cards -->
-        <div class="hero-badge-grid">
-          <div class="badge-card">
-            <span class="badge-num">4</span>
-            <span class="badge-label">Internships</span>
-          </div>
-          <div class="badge-card">
-            <span class="badge-num">3</span>
-            <span class="badge-label">Languages</span>
-          </div>
-        </div>
-      </div>*/
 
       <blockquote class="prompt-info">
         <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i>
