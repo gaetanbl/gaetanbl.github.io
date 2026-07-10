@@ -853,17 +853,7 @@
               Say hello →
             </a>
             <a class="btn btn-accent" href="#van-conversion">
-              Van conversion summary
-            </a>
-          </div>
-
-          <!-- Circular social tags underneath, just like Yannis -->
-          <div class="socials-row">
-            <a href="https://www.linkedin.com/in/gaetan-baylou-lanot-72931b177/" target="_blank" rel="noopener" class="social-circle" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:Gaetan.baylou--lanot@insa-rennes.fr" class="social-circle" aria-label="Email">
-              <i class="fa-regular fa-envelope"></i>
+              Personality
             </a>
           </div>
         </div>
