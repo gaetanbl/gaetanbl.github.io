@@ -785,7 +785,8 @@
           </div>
           <h3>⚙️ Robotics Cup C++</h3>
           <p>Embedded systems programming within the INSA Rennes school robotics club in C++, I have discover the pleasure of low level programmation.</p>
-          <img class="project-img" src="https://images.unsplash.com/photo-1608962714026-af9a76586b06?auto=format&fit=crop&w=1200&q=80" alt="Robotics Development Board" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213148.png" alt="Robotics Development Board" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213333.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
         </article>
 
         <!-- Project 3: ROS2 Autonomous -->
@@ -831,7 +832,8 @@
           </div>
           <h3>🤖 Duckiebot RL</h3>
           <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
-          <img class="project-img" src="https://images.unsplash.com/photo-1617791160505-6f006e121980?auto=format&fit=crop&w=1200&q=80" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212831.png" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
         </article>
 
       </div>
