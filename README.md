@@ -816,7 +816,9 @@
           </div>
           <h3>🧠 Supervised Vision</h3>
           <p>Implementation with a 70 hour-video tuto on google scholar an AI thaht have leanred to reconized foods</p>
-          <img class="project-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80" alt="Supervised Learning Input" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" onerror="this.style.display='none'">
+        </article>
         </article>
 
         <!-- Project 5: Duckiebot RL -->
@@ -855,7 +857,7 @@
         </p>
       </div>
 
-      <img class="project-img" src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1200&q=80" alt="Mountain Road Expedition Van" onerror="this.style.display='none'">
+      <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Mountain Road Expedition Van" onerror="this.style.display='none'">
     </section>
 
     <footer></footer>
