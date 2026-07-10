@@ -769,7 +769,8 @@
           </div>
           <h3>✈️ INS'Aérien Club</h3>
           <p>Founded and managed an open-access FPV drone club at INSA Rennes: creation of quick flying machine, tutoring how to fly and I have freely captured a lot of event on and outside of my school campus.</p>
-          <img class="project-img" src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80" alt="FPV Drone Flying" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/1918aba69b07d2b2eb488313b6324177da91e821/Capture%20d'%C3%A9cran%202026-07-10%20212132d.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
+          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/1918aba69b07d2b2eb488313b6324177da91e821/Enregistrement%202026-07-10%20211746.mp4" alt="FPV Drone Flying" onerror="this.style.display='none'">
         </article>
 
         <!-- Project 2: Robotics Cup C++ -->
