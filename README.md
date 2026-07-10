@@ -434,7 +434,7 @@
       }
     }
 
-    /* HERO BADGES GRID (Beautiful 2x2 cards inspired by Yannis screenshot) */
+    /* HERO BADGES GRID (Beautiful 2x2 cards inspired by Yannis screenshot) 
     .hero-badge-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -478,7 +478,7 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--text-muted);
-    }
+    }*/
 
     /* ==========================================================================
        YANNIS HORIZONTAL BUTTONS AND SOCIALS ROW
@@ -850,7 +850,7 @@
               Download CV
             </a>
             <a class="btn btn-secondary" href="#contact-minimal" id="say-hello-btn">
-              Say hello →
+              Say hello
             </a>
             <a class="btn btn-accent" href="#van-conversion">
               Personality
@@ -858,7 +858,7 @@
           </div>
         </div>
 
-        <!-- Right Side: 2x2 beautiful grid of cards -->
+        /*<!-- Right Side: 2x2 beautiful grid of cards -->
         <div class="hero-badge-grid">
           <div class="badge-card">
             <span class="badge-num">4</span>
@@ -869,7 +869,7 @@
             <span class="badge-label">Languages</span>
           </div>
         </div>
-      </div>
+      </div>*/
 
       <blockquote class="prompt-info">
         <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i>
@@ -1084,11 +1084,3 @@
   </script>
 </body>
 </html>
-```eof
-
-<!-- STREAMING_CHUNK: Concluding response and cache instructions -->
-J'ai reconstruit l'intégralité de la page en m'assurant que la classe `.content-wrapper` n'ait **aucune restriction artificielle de largeur maximale** (`max-width: 100%`) et que les textes d'articles ne soient plus limités. 
-
-Pour être sûr de voir le résultat sur votre hébergement GitHub Pages (qui met parfois plusieurs minutes à mettre à jour les fichiers en cache) :
-* Ouvrez votre lien `github.io` dans une **fenêtre de navigation privée**.
-* Ou effectuez un **rafraîchissement forcé** en faisant `Ctrl + F5` (Windows) ou `Cmd + Shift + R` (Mac).
