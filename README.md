@@ -653,7 +653,7 @@
       <div class="profile">
         <div class="profile-avatar">🚀</div>
         <h1>Gaëtan <em>Baylou-Lanot</em></h1>
-        <p>Mechanical &amp; Control Engineering Student</p>
+        <p>Robotic - AI</p>
       </div>
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
@@ -708,7 +708,7 @@
         <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
         <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
         <p class="hero-sub">
-          Welcome to my portfolio: a brief presentation and some projects.
+          Welcome to my portfolio: a brief introduction and a few projects, including my best work in the fields of programming and AI.
         </p>
         
         <!-- Action Buttons -->
