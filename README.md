@@ -703,9 +703,9 @@ figcaption.caption {
   <aside class="sidebar">
     <div class="sidebar-top">
       <div class="profile">
-        <div class="profile-avatar">🚀</div>
+        <div class="profile-avatar"><img src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/833fa949a7780289bcf8465770c654755098b111/ma%20tete.png" alt="Photo de Gaëtan" class="profile-avatar"></div>
         <h1>Gaëtan <em>Baylou-Lanot</em></h1>
-        <p>Robotic - AI</p>
+        <p>Robotic - AI - physics</p>
       </div>
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
