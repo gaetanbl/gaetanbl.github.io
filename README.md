@@ -339,7 +339,7 @@
     .content-wrapper {
       margin-left: 290px;
       padding: 4rem 5rem;
-      max-width: 1050px;
+      max-width: 1250px; /* Expanded slightly to prevent central compression */
       position: relative;
       z-index: 1;
     }
@@ -414,27 +414,46 @@
       line-height: 1.7;
       margin-bottom: 1.5rem;
     }
-
+  </style>
+  <style>
     /* ==========================================================================
-       HERO BADGES / BUBBLES
+       HERO SIDE-BY-SIDE GRID LAYOUT (fixes vertical compression)
        ========================================================================== */
-    .hero-badges-container {
-      display: flex;
-      flex-wrap: wrap;
+    .hero-layout-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 1200px) {
+      .hero-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    /* HERO BADGES GRID (Beautiful 2x2 cards inspired by Yannis screenshot) */
+    .hero-badge-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.2rem;
-      margin-bottom: 3.5rem;
     }
 
     .badge-card {
       background: var(--bg-panel);
       border: 1px solid var(--border-color);
-      padding: 0.8rem 1.5rem;
-      border-radius: 14px;
+      padding: 2.5rem 1.5rem;
+      border-radius: 16px;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
       transition: all 0.3s ease;
+      text-align: center;
+      aspect-ratio: 1 / 1;
     }
 
     .badge-card:hover {
@@ -445,28 +464,31 @@
 
     .badge-card .badge-num {
       font-family: var(--font-serif);
-      font-size: 1.8rem;
-      color: var(--accent);
+      font-size: 3rem;
+      color: var(--text-main);
       line-height: 1;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
     }
 
     .badge-card .badge-label {
       font-family: var(--font-sans);
-      font-size: 0.8rem;
-      font-weight: 600;
+      font-size: 0.72rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-main);
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
     }
 
     /* ==========================================================================
-       BUTTONS
+       YANNIS HORIZONTAL BUTTONS AND SOCIALS ROW
        ========================================================================== */
     .btn-container {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
+      align-items: center;
     }
 
     .btn {
@@ -478,44 +500,72 @@
       font-size: 0.95rem;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 12px;
+      border-radius: 9999px; /* Completely rounded pill buttons */
       transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       gap: 10px;
     }
 
     .btn-primary {
-      background-color: var(--accent);
-      color: #fff;
-      box-shadow: 0 8px 24px rgba(255, 93, 56, 0.2);
+      background-color: var(--text-main);
+      color: var(--bg-dark);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
 
     .btn-primary:hover {
-      background-color: #ff7554;
+      background-color: var(--accent);
+      color: #fff;
       transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(255, 93, 56, 0.3);
+      box-shadow: 0 8px 20px rgba(255, 93, 56, 0.25);
     }
 
     .btn-secondary {
       background-color: transparent;
       color: var(--text-main);
-      border: 1px solid var(--border-color);
+      border: 1.5px solid var(--text-main);
     }
 
     .btn-secondary:hover {
-      background-color: rgba(0, 0, 0, 0.02);
-      border-color: var(--text-main);
+      background-color: rgba(28, 25, 23, 0.03);
       transform: translateY(-2px);
     }
 
     .btn-accent {
       background-color: rgba(255, 93, 56, 0.1);
       color: var(--accent);
-      border: 1px solid rgba(255, 93, 56, 0.2);
+      border: 1px solid rgba(255, 93, 56, 0.15);
     }
 
     .btn-accent:hover {
       background-color: rgba(255, 93, 56, 0.15);
       transform: translateY(-2px);
+    }
+
+    .socials-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 1.5rem;
+    }
+
+    .social-circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--bg-panel);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--text-main);
+      font-size: 1.1rem;
+      transition: all 0.2s ease;
+    }
+
+    .social-circle:hover {
+      color: #fff;
+      background-color: var(--text-main);
+      transform: scale(1.05);
     }
 
     /* Sleek Info Prompt Box */
@@ -526,7 +576,7 @@
       color: var(--text-main);
       border-radius: 0 12px 12px 0;
       font-size: 1rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -785,35 +835,58 @@
          SECTION 1: HERO / PROFILE & BIO
          ════════════════════════════ -->
     <section id="introduction">
-      <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
-      <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
-      <p class="hero-sub">
-        Welcome to my personal project portfolio. I explore fields where automation, robotics, hardware design, and intelligent controls meet.
-      </p>
+      <div class="hero-layout-grid">
+        <!-- Left Side: Hero Text, pill buttons, socials -->
+        <div class="hero-text-block">
+          <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
+          <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
+          <p class="hero-sub">
+            Welcome to my personal project portfolio. I explore fields where automation, robotics, hardware design, and intelligent controls meet.
+          </p>
+          
+          <!-- Three requested pill-shaped action buttons -->
+          <div class="btn-container">
+            <a class="btn btn-primary" href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" rel="noopener">
+              Download CV
+            </a>
+            <a class="btn btn-secondary" href="#contact-minimal" id="say-hello-btn">
+              Say hello →
+            </a>
+            <a class="btn btn-accent" href="#van-conversion">
+              Van conversion summary
+            </a>
+          </div>
 
-      <!-- Stat Badges (Requested: 4 internships and 4 languages) -->
-      <div class="hero-badges-container">
-        <div class="badge-card">
-          <span class="badge-num">4</span>
-          <span class="badge-label">Internships</span>
+          <!-- Circular social tags underneath, just like Yannis -->
+          <div class="socials-row">
+            <a href="https://www.linkedin.com/in/gaetan-baylou-lanot-72931b177/" target="_blank" rel="noopener" class="social-circle" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:Gaetan.baylou--lanot@insa-rennes.fr" class="social-circle" aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
         </div>
-        <div class="badge-card">
-          <span class="badge-num">4</span>
-          <span class="badge-label">Languages</span>
+
+        <!-- Right Side: 2x2 beautiful grid of cards -->
+        <div class="hero-badge-grid">
+          <div class="badge-card">
+            <span class="badge-num">4</span>
+            <span class="badge-label">Internships</span>
+          </div>
+          <div class="badge-card">
+            <span class="badge-num">4</span>
+            <span class="badge-label">Languages</span>
+          </div>
+          <div class="badge-card">
+            <span class="badge-num">GMA</span>
+            <span class="badge-label">Engineering</span>
+          </div>
+          <div class="badge-card">
+            <span class="badge-num">FPV</span>
+            <span class="badge-label">Drone Pilot</span>
+          </div>
         </div>
-      </div>
-      
-      <!-- Three requested dynamic action buttons -->
-      <div class="btn-container">
-        <a class="btn btn-primary" href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" rel="noopener">
-          <i class="fa-solid fa-download"></i> Download CV
-        </a>
-        <a class="btn btn-secondary" href="#contact-minimal" id="say-hello-btn">
-          <i class="fa-regular fa-paper-plane"></i> Say hello
-        </a>
-        <a class="btn btn-accent" href="#van-conversion">
-          <i class="fa-solid fa-mountain-sun"></i> Van conversion summary
-        </a>
       </div>
 
       <blockquote class="prompt-info">
