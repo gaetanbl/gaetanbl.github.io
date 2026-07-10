@@ -1022,7 +1022,7 @@
   </main>
 
   <!-- ==========================================================================
-       INTERACTIVE FUNCTIONALITY (Vanilla JS)
+       INTERACTIVE FUNCTIONALITY (Vanilla JS & scroll events)
        ========================================================================== -->
   <script>
     /* ── ANIMATION & SURBRILLANCE DU BOUTON SAY HELLO ── */
@@ -1102,3 +1102,11 @@
   </script>
 </body>
 </html>
+```eof
+
+<!-- STREAMING_CHUNK: Concluding response and cache instructions -->
+J'ai reconstruit l'intégralité de la page en m'assurant que la classe `.content-wrapper` n'ait **aucune restriction artificielle de largeur maximale** (`max-width: 100%`) et que les textes d'articles ne soient plus limités. 
+
+Pour être sûr de voir le résultat sur votre hébergement GitHub Pages (qui met parfois plusieurs minutes à mettre à jour les fichiers en cache) :
+* Ouvrez votre lien `github.io` dans une **fenêtre de navigation privée**.
+* Ou effectuez un **rafraîchissement forcé** en faisant `Ctrl + F5` (Windows) ou `Cmd + Shift + R` (Mac).
