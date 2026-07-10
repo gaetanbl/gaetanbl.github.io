@@ -77,16 +77,22 @@
     }
 
     .profile-avatar {
-  width: 120px;          /* Taille de ton choix */
-  height: 120px;
-  border-radius: 50%;    /* Cercle parfait */
-  object-fit: cover;     /* Recadre proprement */
-  display: block;
-  margin: 0 auto 15px auto; /* Centre l'image et ajoute de l'espace en bas */
-  border: none;          /* Supprime la bordure colorée */
-  background: none;      /* Supprime l'arrière-plan */
-  box-shadow: none;      /* Supprime les effets d'ombre si présents */
-}
+      width: 90px;           /* Taille réduite pour un meilleur équilibre */
+      height: 90px;
+      border-radius: 50%;    /* Cercle parfait */
+      object-fit: cover;     /* Maintient les proportions */
+      display: block;
+      margin: 0 auto 15px auto; 
+      
+      /* Ajout de style design */
+      border: 3px solid rgba(255, 255, 255, 0.8); /* Contour blanc élégant */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombre douce et naturelle */
+      transition: transform 0.3s ease;            /* Petit effet au survol */
+    }
+    
+    .profile-avatar:hover {
+      transform: scale(1.05); /* L'image grandit légèrement au survol */
+    }
 
     .profile h1 {
       font-family: var(--font-serif);
