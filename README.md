@@ -664,6 +664,22 @@
         width: 100%;
       }
     }
+
+    figure.media-item {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+    
+    figcaption.caption {
+      font-size: 0.85rem;
+      color: var(--text-secondary, #888); /* S'adaptera à ton thème */
+      text-align: center;
+      font-style: italic;
+      line-height: 1.4;
+    }
   </style>
 
   <!-- ── MOBILE HEADER ── -->
@@ -724,7 +740,7 @@
     </div>
   </aside>
 
-  <!-- ── MAIN CONTENT AREA ── -->
+<!-- ── MAIN CONTENT AREA ── -->
   <main class="content-wrapper">
 
     <!-- ════════════════════════════
@@ -759,7 +775,7 @@
     </section>
 
     <!-- ════════════════════════════
-         SECTION 2: PROFESSIONAL TRACKS (Clean Text Structure)
+         SECTION 2: PROFESSIONAL TRACKS
          ════════════════════════════ -->
     <section id="gma-internships">
       <span class="eyebrow">Professional Tracks</span>
@@ -774,13 +790,14 @@
         Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD), Noise, Vibration, and Harshness (NVH) or Partial Differential Equations (PDE) for example.
       </p>
       <div class="media-row">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/72a4edc1369b97d542c935f5e171613c8af7bd76/20260511_113120%20(1).jpg" alt="Deep RL Training Graph" onerror="this.style.display='none'">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/b6ca105b582d8e456535b538616a6aab6c2c9eb8/Capture%20d'%C3%A9cran%202026-07-10%20231935.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
-          </div>
+        <!-- Liens corrigés (suppression de /blob/) -->
+        <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20260511_113120%20(1).jpg" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+        <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/b6ca105b582d8e456535b538616a6aab6c2c9eb8/Capture%20d'%C3%A9cran%202026-07-10%20231935.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+      </div>
     </section>
 
     <!-- ════════════════════════════
-         SECTION 3: SEQUENTIAL PROJECTS (Pure Article Stack)
+         SECTION 3: SEQUENTIAL PROJECTS
          ════════════════════════════ -->
     <section id="projects-container" style="border-bottom: none; padding-bottom: 0;">
       <span class="eyebrow">Technical Works</span>
@@ -802,11 +819,16 @@
           <p>Founded and managed an open-access FPV drone club at INSA Rennes: creation of quick flying machine, tutoring how to fly and I have freely captured a lot of event on and outside of my school campus.</p>
           
           <div class="media-row">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/1918aba69b07d2b2eb488313b6324177da91e821/Capture%20d'%C3%A9cran%202026-07-10%20212132d.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
-            <video class="project-video" autoplay loop muted playsinline>
-              <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/1918aba69b07d2b2eb488313b6324177da91e821/Enregistrement%202026-07-10%20211746.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/1918aba69b07d2b2eb488313b6324177da91e821/Capture%20d'%C3%A9cran%202026-07-10%20212132d.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
+              <figcaption class="caption">Open event for everyone during the "Insa'lan 2024" festival</figcaption>
+            </figure>
+            <figure class="media-item">
+              <video class="project-video" autoplay loop muted playsinline>
+                <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/1918aba69b07d2b2eb488313b6324177da91e821/Enregistrement%202026-07-10%20211746.mp4" type="video/mp4">
+              </video>
+              <figcaption class="caption">Repairing one of our drones after a crash</figcaption>
+            </figure>
           </div>
         </article>
 
@@ -824,8 +846,14 @@
           <p>Embedded systems programming within the INSA Rennes school robotics club in C++, I have discover the pleasure of low level programmation.</p>
           
           <div class="media-row">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213148.png" alt="Robotics Development Board" onerror="this.style.display='none'">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213333.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213148.png" alt="Robotics Development Board" onerror="this.style.display='none'">
+              <figcaption class="caption">Everyone working hard after just a few hours of sleep</figcaption>
+            </figure>
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213333.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
+              <figcaption class="caption">End of the competition: 41st out of 122</figcaption>
+            </figure>
           </div>
         </article>
 
@@ -857,8 +885,14 @@
           <p>Implementation with a 70 hour-video tuto on google scholar an AI that have learned to reconize foods.</p>
           
           <div class="media-row">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" alt="Supervised Vision 1" onerror="this.style.display='none'">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" alt="Supervised Vision 1" onerror="this.style.display='none'">
+              <figcaption class="caption">Summary output of my second model</figcaption>
+            </figure>
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
+              <figcaption class="caption">Streamlit dashboard comparing runs and learning curves</figcaption>
+            </figure>
           </div>
         </article>
 
@@ -877,11 +911,17 @@
           <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
           
           <div class="media-row">
-            <video class="project-video" autoplay loop muted playsinline>
-              <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/72a4edc1369b97d542c935f5e171613c8af7bd76/20260710_115740_1%20(1).mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+            <!-- Lien corrigé (suppression de /blob/) -->
+            <figure class="media-item">
+              <video class="project-video" autoplay loop muted playsinline>
+                <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20260710_115740_1%20(1).mp4" type="video/mp4">
+              </video>
+              <figcaption class="caption">Duckiebot line following</figcaption>
+            </figure>
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+              <figcaption class="caption">Obstacle avoidance policy training on Isaac Sim</figcaption>
+            </figure>
           </div>
         </article>
 
@@ -902,10 +942,19 @@
         <p class="paragraph">
           While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
         </p>
-      <div class="media-row">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/72a4edc1369b97d542c935f5e171613c8af7bd76/20230624_182522%20(1).jpg" alt="Deep RL Training Graph" onerror="this.style.display='none'">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
-          </div>
+        
+        <div class="media-row">
+            <!-- Lien corrigé (suppression de /blob/) -->
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20230624_182522%20(1).jpg" alt="Van conversion" onerror="this.style.display='none'">
+              <figcaption class="caption">First step of the conversion: building the rear cabinet in 2022</figcaption>
+            </figure>
+            
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Van tour" onerror="this.style.display='none'">
+              <figcaption class="caption">At the start of the Belle-Île tour</figcaption>
+            </figure>
+        </div>
       </div>
     </section>
 
@@ -986,5 +1035,3 @@
       }
     });
   </script>
-</body>
-</html>
