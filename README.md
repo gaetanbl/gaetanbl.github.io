@@ -864,11 +864,11 @@ figcaption.caption {
           <div class="media-row">
             <figure class="media-item">
               <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213148.png" alt="Robotics Development Board" onerror="this.style.display='none'">
-              <figcaption class="caption">Everyone working hard after just a few hours of sleep</figcaption>
+              <figcaption class="caption">End of the competition: 41st out of 122</figcaption>
             </figure>
             <figure class="media-item">
               <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213333.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
-              <figcaption class="caption">End of the competition: 41st out of 122</figcaption>
+              <figcaption class="caption">Everyone working hard after just a few hours of sleep</figcaption>
             </figure>
           </div>
         </article>
@@ -903,7 +903,7 @@ figcaption.caption {
           <div class="media-row">
             <figure class="media-item">
               <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" alt="Supervised Vision 1" onerror="this.style.display='none'">
-              <figcaption class="caption">Summary output of my second model</figcaption>
+              <figcaption class="caption">Summary output of my second model: desactivation of the gradient in order to reduce the trainable parameters</figcaption>
             </figure>
             <figure class="media-item">
               <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
