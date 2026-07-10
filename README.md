@@ -1,391 +1,1031 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaëtan Baylou-Lanot - Project Portfolio</title>
-    <style>
-        /* ==========================================================================
-           ARTISTIC DIRECTION: CHIRPY INSPIRED (MINIMALIST & LAB STYLE)
-           ========================================================================== */
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #343a40;
-            --heading-color: #1c1f23;
-            --sidebar-bg: #f4f6f8;
-            --sidebar-text: #495057;
-            --accent-color: #007bff;
-            --accent-bg-light: #e3f2fd;
-            --code-bg: #1e1e1e;
-            --code-text: #f8f8f2;
-            --border-color: #dbdfe2;
-            --tag-bg: #eff1f3;
-            --tag-text: #6c757d;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaëtan Baylou-Lanot — Mechanical, Control &amp; AI Portfolio</title>
+  
+  <!-- Premium Typographies (Yannis style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-        body {
-            font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-        }
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM (Obsidian Premium Tech Palette & Typography)
+       ========================================================================== */
+    :root {
+      --bg-dark: #f8f6f1;         /* Premium Warm Cream/Beige Background */
+      --bg-panel: #fcfbfa;        /* Clean Off-White for Sidebar and Panels */
+      --bg-panel-hover: #f1ede4;  /* Soft warm hover state */
+      --accent: #ff5d38;          /* Tech Sunset Orange */
+      --accent-rgb: 255, 93, 56;
+      --text-main: #1c1917;       /* Deep warm stone charcoal */
+      --text-muted: #6b6661;      /* Elegant stone/taupe muted gray */
+      --border-color: rgba(27, 25, 23, 0.08); /* Sophisticated subtle border */
+      --font-serif: 'DM Serif Display', serif;
+      --font-sans: 'Space Grotesk', sans-serif;
+    }
 
-        /* LEFT SIDEBAR (COMPACT & CLEAN) */
-        .sidebar {
-            width: 240px;
-            background-color: var(--sidebar-bg);
-            border-right: 1px solid var(--border-color);
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 3rem 1.2rem 1.5rem 1.2rem;
-            box-sizing: border-box;
-            z-index: 100;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .sidebar-top {
-            display: flex;
-            flex-direction: column;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .profile {
-            text-align: left;
-            margin-bottom: 2.5rem;
-            padding-left: 0.5rem;
-        }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
 
-        .profile-pic {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
-        }
+    /* Ambient soft warm background glow */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -20%;
+      right: -10%;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(255, 93, 56, 0.06) 0%, transparent 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
 
-        .profile h1 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin: 0;
-            color: var(--heading-color);
-            letter-spacing: -0.025em;
-        }
+    /* ==========================================================================
+       LAYOUT STRUCTURE & ANIMATED SIDEBAR
+       ========================================================================== */
+    /* LEFT SIDEBAR (Desktop) */
+    .sidebar {
+      width: 290px;
+      background-color: var(--bg-panel);
+      border-right: 1px solid var(--border-color);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+      z-index: 100;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-        .profile p {
-            font-size: 0.8rem;
-            color: #868e96;
-            margin: 0.3rem 0 0 0;
-            font-weight: 400;
-        }
+    .profile {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
 
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .profile-avatar {
+      font-size: 2rem;
+      width: 52px;
+      height: 52px;
+      background: rgba(255, 93, 56, 0.1);
+      border: 1px solid rgba(255, 93, 56, 0.2);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 24px rgba(255, 93, 56, 0.1);
+    }
 
-        .nav-links li {
-            margin-bottom: 0.2rem;
-        }
+    .profile h1 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
+      color: var(--text-main);
+    }
 
-        .nav-links a {
-            text-decoration: none;
-            color: var(--sidebar-text);
-            font-weight: 500;
-            font-size: 0.85rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 0.5rem 0.6rem;
-            border-radius: 6px;
-            transition: all 0.15s ease-in-out;
-        }
+    .profile h1 em {
+      font-family: var(--font-serif);
+      color: var(--accent);
+      font-style: italic;
+    }
 
-        .nav-links a:hover {
-            background-color: #e9ecef;
-            color: var(--heading-color);
-        }
+    .profile p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 400;
+      line-height: 1.3;
+    }
 
-        .sidebar-footer {
-            display: flex;
-            gap: 15px;
-            padding-left: 0.6rem;
-            font-size: 0.9rem;
-            color: #adb5bd;
-        }
-        
-        .sidebar-footer a {
-            color: #adb5bd;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .sidebar-footer a:hover { color: var(--heading-color); }
+    /* Sidebar Navigation Links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      overflow-y: auto;
+      max-height: calc(100vh - 280px);
+      padding-right: 5px;
+    }
 
-        /* MAIN CONTENT AREA */
-        .content {
-            margin-left: 240px;
-            padding: 3rem 2.5rem 3rem 1.5rem;
-            max-width: 1200px;
-            box-sizing: border-box;
-        }
+    /* Scrollbar for sidebar menu items if needed */
+    .nav-links::-webkit-scrollbar {
+      width: 3px;
+    }
+    .nav-links::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+    }
 
-        /* Chirpy Style Tags */
-        .tag-container {
-            margin-bottom: 0.75rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
+    /* Navigation Category Labels */
+    .nav-category-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      font-weight: 700;
+      padding: 0.8rem 0.6rem 0.3rem 0.6rem;
+      pointer-events: none;
+      user-select: none;
+      opacity: 0.85;
+    }
 
-        .tag {
-            background: var(--tag-bg);
-            color: var(--tag-text);
-            padding: 0.15rem 0.55rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            transition: background 0.2s;
-        }
-        
-        .tag:hover {
-            background: #e2e6ea;
-            color: var(--heading-color);
-        }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0.5rem 0.6rem;
+      border-radius: 8px;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      border-left: 3px solid transparent;
+    }
 
-        h1.main-title { 
-            font-size: 2.2rem; 
-            font-weight: 700;
-            color: var(--heading-color);
-            margin: 0 0 0.6rem 0;
-            letter-spacing: -0.03em;
-            line-height: 1.2;
-        }
+    /* Nested project items */
+    .nav-links li.sub-item {
+      margin-left: 0.5rem;
+    }
 
-        .meta {
-            font-size: 0.85rem;
-            color: #868e96;
-            margin-bottom: 2.5rem;
-            padding-bottom: 1.2rem;
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            gap: 15px;
-        }
+    .nav-links li.sub-item a {
+      font-size: 0.78rem;
+      padding: 0.35rem 0.6rem;
+      opacity: 0.9;
+    }
 
-        h2 { 
-            font-size: 1.45rem; 
-            font-weight: 600;
-            color: var(--heading-color);
-            margin-top: 3.5rem; 
-            margin-bottom: 1rem;
-            letter-spacing: -0.02em;
-        }
+    .nav-links a i, .nav-links a span.dot-bullet {
+      font-size: 0.9rem;
+      transition: transform 0.2s;
+      width: 14px;
+      text-align: center;
+    }
 
-        p {
-            margin: 1rem 0;
-            color: var(--text-color);
-            font-size: 1rem;
-            line-height: 1.6;
-        }
+    .nav-links a span.dot-bullet {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      margin-left: 4px;
+      margin-right: 4px;
+    }
 
-        ul {
-            padding-left: 1.25rem;
-            margin: 1rem 0;
-        }
+    .nav-links a:hover, .nav-links li.active a {
+      color: var(--text-main);
+      background-color: var(--bg-panel-hover);
+      border-left: 3px solid var(--accent);
+      opacity: 1;
+    }
 
-        li {
-            margin-bottom: 0.6rem;
-            color: var(--text-color);
-            line-height: 1.5;
-        }
-        
-        li strong {
-            color: var(--heading-color);
-        }
+    .nav-links li.active a span.dot-bullet {
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+    }
 
-        /* PORTFOLIO IMAGES STYLE */
-        .project-img {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin: 1.2rem 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-            border: 1px solid var(--border-color);
-        }
+    .nav-links a:hover i {
+      transform: translateX(2px);
+    }
 
-        /* INFO ALERT BOX */
-        blockquote.prompt-info {
-            border-left: 4px solid var(--accent-color);
-            margin: 2rem 0;
-            padding: 1rem 1.25rem;
-            background-color: var(--accent-bg-light);
-            color: #1e4265;
-            border-radius: 0 6px 6px 0;
-            font-size: 0.95rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-        
-        blockquote.prompt-info::before {
-            content: "ℹ️";
-            font-size: 1.1rem;
-            line-height: 1;
-        }
+    /* Sidebar Footer & Discreet Contact */
+    .sidebar-footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+    }
 
-        /* CODE BLOCKS */
-        pre {
-            background-color: var(--code-bg);
-            padding: 1.25rem;
-            border-radius: 8px;
-            overflow-x: auto;
-            margin: 1.75rem 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
+    .discreet-contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
 
-        code {
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-            font-size: 0.85rem;
-            background-color: #f1f3f5;
-            color: #d63384;
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-        }
+    .discreet-contact-container .eyebrow {
+      margin-bottom: 0.2rem !important;
+    }
 
-        pre code {
-            color: var(--code-text);
-            background-color: transparent;
-            padding: 0;
-            border-radius: 0;
-        }
+    .contact-row-minimal {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
 
-        /* RESPONSIVE DESIGN */
-        @media (max-width: 850px) {
-            .sidebar { width: 100%; height: auto; position: relative; padding: 2rem 1.5rem; border-right: none; border-bottom: 1px solid var(--border-color); }
-            .content { margin-left: 0; padding: 2.5rem 1.5rem; }
-        }
-    </style>
+    .contact-item-discreet {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.7rem; /* Reduced text size for perfect discreet rendering */
+      line-height: 1.3;
+      transition: color 0.2s;
+    }
+
+    .contact-item-discreet:hover {
+      color: var(--accent);
+    }
+
+    .contact-item-discreet i {
+      color: var(--accent);
+      font-size: 0.8rem;
+      width: 12px;
+      text-align: center;
+    }
+
+    /* ── ANIMATION DE SURBRILLANCE CONTACTS ── */
+    @keyframes pulseHighlight {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 93, 56, 0);
+        background-color: transparent;
+      }
+      15% {
+        box-shadow: 0 0 0 12px rgba(255, 93, 56, 0.15);
+        background-color: rgba(255, 93, 56, 0.08);
+        border-radius: 12px;
+        transform: translateY(-2px);
+      }
+      30% {
+        box-shadow: 0 0 0 16px rgba(255, 93, 56, 0.2);
+        background-color: rgba(255, 93, 56, 0.12);
+        border-radius: 12px;
+        transform: translateY(-3px);
+      }
+      45% {
+        transform: translateY(1px);
+      }
+      60% {
+        box-shadow: 0 0 0 8px rgba(255, 93, 56, 0.08);
+        background-color: rgba(255, 93, 56, 0.06);
+        border-radius: 12px;
+        transform: translateY(-1px);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 93, 56, 0);
+        background-color: transparent;
+        transform: translateY(0);
+      }
+    }
+
+    .flash-highlight {
+      animation: pulseHighlight 2s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* ==========================================================================
+       MOBILE HEADER & MENU
+       ========================================================================== */
+    .mobile-header {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background: rgba(248, 246, 241, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 99;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.5rem;
+    }
+
+    .mobile-logo {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--text-main);
+    }
+
+    .mobile-logo em {
+      color: var(--accent);
+    }
+
+    .hamburger {
+      background: none;
+      border: none;
+      color: var(--text-main);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== */
+    .content-wrapper {
+      margin-left: 290px;
+      padding: 4rem 5rem;
+      max-width: 1050px;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 4.5rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    /* ==========================================================================
+       TYPOGRAPHY AND SUB-ELEMENTS
+       ========================================================================== */
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    h1.hero-title {
+      font-family: var(--font-serif);
+      font-size: 4.5rem;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    h1.hero-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    h1.hero-title .dot {
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 720px;
+      margin-bottom: 2.5rem;
+    }
+
+    h2.section-title {
+      font-family: var(--font-serif);
+      font-size: 2.6rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+    }
+
+    h2.section-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    p.paragraph {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ==========================================================================
+       HERO BADGES / BUBBLES
+       ========================================================================== */
+    .hero-badges-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .badge-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-color);
+      padding: 0.8rem 1.5rem;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      transition: all 0.3s ease;
+    }
+
+    .badge-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 93, 56, 0.2);
+      box-shadow: 0 8px 24px rgba(255, 93, 56, 0.05);
+    }
+
+    .badge-card .badge-num {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .badge-card .badge-label {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-main);
+    }
+
+    /* ==========================================================================
+       BUTTONS
+       ========================================================================== */
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 1.8rem;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      gap: 10px;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(255, 93, 56, 0.2);
+    }
+
+    .btn-primary:hover {
+      background-color: #ff7554;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(255, 93, 56, 0.3);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+      border-color: var(--text-main);
+      transform: translateY(-2px);
+    }
+
+    .btn-accent {
+      background-color: rgba(255, 93, 56, 0.1);
+      color: var(--accent);
+      border: 1px solid rgba(255, 93, 56, 0.2);
+    }
+
+    .btn-accent:hover {
+      background-color: rgba(255, 93, 56, 0.15);
+      transform: translateY(-2px);
+    }
+
+    /* Sleek Info Prompt Box */
+    blockquote.prompt-info {
+      border-left: 4px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      background-color: rgba(255, 93, 56, 0.05);
+      color: var(--text-main);
+      border-radius: 0 12px 12px 0;
+      font-size: 1rem;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* ==========================================================================
+       SEQUENTIAL PROJECT ARTICLES (Pure Editorial Look - NO BUBBLES/CARDS)
+       ========================================================================== */
+    .projects-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 4.5rem;
+    }
+
+    .project-article {
+      background-color: transparent; /* No bubble cards */
+      border-bottom: 1px solid var(--border-color); /* Elegant thin separator line */
+      padding-bottom: 4.5rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .project-article:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .proj-meta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: rgba(0, 0, 0, 0.03);
+      color: var(--text-muted);
+      padding: 0.3rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid var(--border-color);
+    }
+
+    .proj-year {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .project-article h3 {
+      font-family: var(--font-sans);
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      line-height: 1.3;
+      color: var(--text-main);
+    }
+
+    .project-article p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.8rem;
+    }
+
+    .project-img {
+      width: 100%;
+      max-height: 440px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    /* ==========================================================================
+       DISCREET MINIMAL CONTACT BLOCK (At the very bottom of the last section)
+       ========================================================================== */
+    .discreet-contact-container {
+      margin-top: 4.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .contact-row-minimal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .contact-item-discreet {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .contact-item-discreet:hover {
+      color: var(--accent);
+    }
+
+    .contact-item-discreet i {
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      padding: 3rem 0 1.5rem 0;
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE MEDIA QUERIES
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .sidebar {
+        transform: translateX(-100%);
+      }
+      
+      body.nav-open .sidebar {
+        transform: translateX(0);
+        box-shadow: 20px 0 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .mobile-header {
+        display: flex;
+      }
+
+      .content-wrapper {
+        margin-left: 0;
+        padding: 6rem 2rem 2rem 2rem;
+      }
+
+      h1.hero-title {
+        font-size: 3.2rem;
+      }
+
+      .project-article {
+        padding-bottom: 3.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      h1.hero-title {
+        font-size: 2.6rem;
+      }
+
+      .btn-container {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .contact-row-minimal {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- LEFT SIDEBAR -->
-    <div class="sidebar">
-        <div class="sidebar-top">
-            <div class="profile">
-                <div class="profile-pic">🚀</div>
-                <h1>Gaëtan Baylou-Lanot</h1>
-                <p>Mechanical & Control Engineering Student</p>
+  <!-- ── MOBILE HEADER ── -->
+  <header class="mobile-header">
+    <div class="mobile-logo">G<em>B</em>.</div>
+    <button class="hamburger" aria-label="Toggle navigation menu" onclick="toggleNav()">
+      <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+    </button>
+  </header>
+
+  <!-- ── LEFT SIDEBAR (Desktop & Animated Mobile Menu) ── -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="profile">
+        <div class="profile-avatar">🚀</div>
+        <h1>Gaëtan <em>Baylou-Lanot</em></h1>
+        <p>Mechanical &amp; Control Engineering Student</p>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="active"><a href="#introduction" onclick="closeNav()"><i class="fa-solid fa-user"></i> Introduction</a></li>
+          <li><a href="#gma-internships" onclick="closeNav()"><i class="fa-solid fa-graduation-cap"></i> GMA Internships</a></li>
+          
+          <!-- Category title for projects -->
+          <li class="nav-category-title">My projects:</li>
+          
+          <!-- Nested Individual Project Links matching requested list -->
+          <li class="sub-item"><a href="#ins-aerien" onclick="closeNav()"><span class="dot-bullet"></span> INS'Aérien Club</a></li>
+          <li class="sub-item"><a href="#code-project-1" onclick="closeNav()"><span class="dot-bullet"></span> Robotics Cup C++</a></li>
+          <li class="sub-item"><a href="#code-project-2" onclick="closeNav()"><span class="dot-bullet"></span> ROS2 Autonomous</a></li>
+          <li class="sub-item"><a href="#ia-project-1" onclick="closeNav()"><span class="dot-bullet"></span> Supervised Vision</a></li>
+          <li class="sub-item"><a href="#ia-project-2" onclick="closeNav()"><span class="dot-bullet"></span> Duckiebot RL</a></li>
+          
+          <li style="margin-top: 0.5rem;"><a href="#van-conversion" onclick="closeNav()"><i class="fa-solid fa-mountain-sun"></i> Personality</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Sidebar Footer - Compact and highly discreet text sizes -->
+    <div class="sidebar-footer">
+      <div class="discreet-contact-container" id="contact-minimal">
+        <span class="eyebrow" style="margin-bottom: 0.2rem; font-size: 0.65rem; letter-spacing: 0.1em;">Get in Touch</span>
+        <div class="contact-row-minimal">
+          <a href="mailto:Gaetan.baylou--lanot@insa-rennes.fr" class="contact-item-discreet">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Gaetan.baylou--lanot@insa-rennes.fr</span>
+          </a>
+          <a href="https://www.linkedin.com/in/gaetan-baylou-lanot-72931b177/" target="_blank" rel="noopener" class="contact-item-discreet">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>Gaëtan Baylou-Lanot</span>
+          </a>
+          <a href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" rel="noopener" class="contact-item-discreet">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span>View CV Link</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT AREA ── -->
+  <main class="content-wrapper">
+
+    <!-- ════════════════════════════
+         SECTION 1: HERO / PROFILE & BIO
+         ════════════════════════════ -->
+    <section id="introduction">
+      <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
+      <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
+      <p class="hero-sub">
+        Welcome to my personal project portfolio. I explore fields where automation, robotics, hardware design, and intelligent controls meet.
+      </p>
+
+      <!-- Stat Badges (Requested: 4 internships and 4 languages) -->
+      <div class="hero-badges-container">
+        <div class="badge-card">
+          <span class="badge-num">4</span>
+          <span class="badge-label">Internships</span>
+        </div>
+        <div class="badge-card">
+          <span class="badge-num">4</span>
+          <span class="badge-label">Languages</span>
+        </div>
+      </div>
+      
+      <!-- Three requested dynamic action buttons -->
+      <div class="btn-container">
+        <a class="btn btn-primary" href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" rel="noopener">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+        <a class="btn btn-secondary" href="#contact-minimal" id="say-hello-btn">
+          <i class="fa-regular fa-paper-plane"></i> Say hello
+        </a>
+        <a class="btn btn-accent" href="#van-conversion">
+          <i class="fa-solid fa-mountain-sun"></i> Van conversion summary
+        </a>
+      </div>
+
+      <blockquote class="prompt-info">
+        <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i>
+        <span><strong>This page is currently being modified.</strong></span>
+      </blockquote>
+    </section>
+
+    <!-- ════════════════════════════
+         SECTION 2: PROFESSIONAL TRACKS (Clean Text Structure)
+         ════════════════════════════ -->
+    <section id="gma-internships">
+      <span class="eyebrow">Professional Tracks</span>
+      <h2 class="section-title">The <em>GMA</em> Experience</h2>
+      <p class="paragraph">
+        Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed perfectly summarize what GMA is all about.
+      </p>
+      <p class="paragraph">
+        At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, at <strong>Metallicadour</strong> (and through my academic continuation), I mastered the operation and control theory of industrial robotic arms. 
+      </p>
+      <p class="paragraph">
+        Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD) and Partial Differential Equations (PDE).
+      </p>
+    </section>
+
+    <!-- ════════════════════════════
+         SECTION 3: SEQUENTIAL PROJECTS (Pure Article Stack - No Bubbles)
+         ════════════════════════════ -->
+    <section id="projects-container" style="border-bottom: none; padding-bottom: 0;">
+      <span class="eyebrow">Technical Works</span>
+      <h2 class="section-title">Academic Tracks &amp; Technical Engineering Projects</h2>
+
+      <div class="projects-stack">
+        
+        <!-- Project 1: INS'Aérien Club -->
+        <article class="project-article" id="ins-aerien">
+          <div class="proj-meta-header">
+            <div class="tag-container">
+              <span class="tag">FPV Drones</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Aviation</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#introduction">📌 Introduction</a></li>
-                <li><a href="#van-conversion">🚐 Van Conversion</a></li>
-                <li><a href="#gma-internships">🎓 GMA Internships</a></li>
-                <li><a href="#ins-aerien">✈️ Association INS'Aérien</a></li>
-                <li><a href="#code-project-1">⚙️ Code Project n°1 (C++)</a></li>
-                <li><a href="#code-project-2">🔌 Code Project n°2 (ROS2)</a></li>
-                <li><a href="#ia-project-1">🧠 AI Project n°1 (ML)</a></li>
-                <li><a href="#ia-project-2">🤖 AI Project n°2 (RL)</a></li>
-            </ul>
-        </div>
-        
-        <div class="sidebar-footer">
-            <a href="https://www.linkedin.com/in/gaetan-baylou-lanot-72931b177/" target="_blank" title="LinkedIn">🔗</a>
-            <a href="mailto:Gaetan.baylou--lanot@insa-rennes.fr" title="Mail">✉️</a>
-            <a href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" title="CV Link">📄</a>
-        </div>
-    </div>
+            <span class="proj-year">Association</span>
+          </div>
+          <h3>✈️ INS'Aérien Club</h3>
+          <p>Founded and managed an open-access FPV drone club at INSA Rennes: creation of quick flying machine, tutoring how to fly and I have freely captured a lot of event on and outside of my school campus.</p>
+          <img class="project-img" src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80" alt="FPV Drone Flying" onerror="this.style.display='none'">
+        </article>
 
-    <!-- MAIN CONTENT AREA -->
-    <div class="content">
-        <div class="tag-container">
-            <span class="tag">mechanical-engineering</span>
-            <span class="tag">control-systems</span>
-            <span class="tag">robotics</span>
-            <span class="tag">automation</span>
-        </div>
-        
-        <h1 class="main-title">Academic Tracks & Technical Engineering Projects</h1>
-        <div class="meta">
-            <span>Current Year: 2026</span>
-            <span>•</span>
-            <span>By Gaëtan Baylou-Lanot</span>
-        </div>
+        <!-- Project 2: Robotics Cup C++ -->
+        <article class="project-article" id="code-project-1">
+          <div class="proj-meta-header">
+            <div class="tag-container">
+              <span class="tag">C++</span>
+              <span class="tag">Embedded Systems</span>
+              <span class="tag">Robotics Cup</span>
+            </div>
+            <span class="proj-year">Project #1</span>
+          </div>
+          <h3>⚙️ Robotics Cup C++</h3>
+          <p>Embedded systems programming within the INSA Rennes school robotics club in C++, I have discover the pleasure of low level programmation.</p>
+          <img class="project-img" src="https://images.unsplash.com/photo-1608962714026-af9a76586b06?auto=format&fit=crop&w=1200&q=80" alt="Robotics Development Board" onerror="this.style.display='none'">
+        </article>
 
-        <section id="introduction">
-            <h2>📌 Introduction</h2>
-            <p>Welcome to my personal project portfolio.</p>
-            
-            <blockquote class="prompt-info">
-                <span><strong>This page is currently being modified.</strong></span>
-            </blockquote>
-        </section>
+        <!-- Project 3: ROS2 Autonomous -->
+        <article class="project-article" id="code-project-2">
+          <div class="proj-meta-header">
+            <div class="tag-container">
+              <span class="tag">ROS2</span>
+              <span class="tag">Python</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <span class="proj-year">Project #2</span>
+          </div>
+          <h3>🔌 ROS2 Autonomous</h3>
+          <p>I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomulsly how code in ROS 2. It was my first expereince with ROS.</p>
+          <img class="project-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80" alt="ROS2 Navigation Simulation" onerror="this.style.display='none'">
+        </article>
 
-        <!-- VAN CONVERSION SECTION (LEFT EMPTY) -->
-        <section id="van-conversion">
-            <h2>🚐 Van conversion: A brief summary of my personality</h2>
-            <p>This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.</p>
-            <p>While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with frinds, or trekking alone for 4 days in the Dolomites sleeping under the stars.</p>
+        <!-- Project 4: Supervised Vision -->
+        <article class="project-article" id="ia-project-1">
+          <div class="proj-meta-header">
+            <div class="tag-container">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Google Scholar</span>
+              <span class="tag">ML Pipeline</span>
+            </div>
+            <span class="proj-year">AI Project #1</span>
+          </div>
+          <h3>🧠 Supervised Vision</h3>
+          <p>Implementation with a 70 hour-video tuto on google scholar an AI thaht have leanred to reconized foods</p>
+          <img class="project-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80" alt="Supervised Learning Input" onerror="this.style.display='none'">
+        </article>
 
-            <img class="project-img" src="images/van-project.jpg" alt="[Insert your Van photo here]">
-        </section>
+        <!-- Project 5: Duckiebot RL -->
+        <article class="project-article" id="ia-project-2">
+          <div class="proj-meta-header">
+            <div class="tag-container">
+              <span class="tag">Reinforcement Learning</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Isaac Lab</span>
+              <span class="tag">Actor-Critic SAC/PPO</span>
+            </div>
+            <span class="proj-year">AI Project #2</span>
+          </div>
+          <h3>🤖 Duckiebot RL</h3>
+          <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
+          <img class="project-img" src="https://images.unsplash.com/photo-1617791160505-6f006e121980?auto=format&fit=crop&w=1200&q=80" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+        </article>
 
-        <!-- GMA INTERNSHIPS (MOVED HERE & UPDATED WITH REAL EXP) -->
-        <section id="gma-internships">
-            <h2>🎓 Mechanical & Control Engineering (GMA) Track: 3 Core Internships</h2>
-            <p>Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed perfectly summarize what GMA is all about. </p>
-            <p>At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, at <strong>Metallicadour</strong> (and through my academic continuation), I mastered the operation and control theory of industrial robotic arms. Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD) and Partial Differential Equations (PDE).</p>
-        </section>
+      </div>
+    </section>
 
-        <!-- INS'AERIEN ASSOCIATION SECTION -->
-        <section id="ins-aerien">
-            <h2>✈️ President of the INS'Aérien Association</h2>
-            <p>Founded and managed an open-access FPV drone club at INSA Rennes: creation of quick flying machine, tutoring how to fly and I have freely captured a lot of event on  and outside of my school campus. </p>
+    <!-- ════════════════════════════
+         SECTION 4: PERSONALITY (The Van conversion) & DISCREET CONTACT
+         ════════════════════════════ -->
+    <section id="van-conversion">
+      <span class="eyebrow">Behind the Code</span>
+      <h2 class="section-title">🚐 Personality</h2>
+      
+      <div class="personality-text">
+        <p class="paragraph">
+          This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
+        </p>
+        <p class="paragraph">
+          While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with frinds, or trekking alone for 4 days in the Dolomites sleeping under the stars.
+        </p>
+      </div>
 
-            <img class="project-img" src="images/van-project.jpg" alt="FPV Drone Testing">
-        </section>
+      <img class="project-img" src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1200&q=80" alt="Mountain Road Expedition Van" onerror="this.style.display='none'">
+    </section>
 
-        <!-- CODE PROJECT 1 -->
-        <section id="code-project-1">
-            <h2>⚙️ Code Project n°1: Robotics Club inside the French Robotics Cup</h2>
-            <p>Embedded systems programming within the INSA Rennes school robotics club in C++, I have discover the pleasure of low level programmation.</p>
-            
-            <img class="project-img" src="images/ros2-project.jpg" alt="[Insert your ROS2 map/nodes photo here]">
-        </section>
+  </main>
 
-        <!-- CODE PROJECT 2 (LEFT EMPTY) -->
-        <section id="code-project-2">
-            <h2>🔌 Code Project n°2: Robot Control with ROS2</h2>
-            <p> I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomulsly how code in ROS 2. It was my first expereince with ROS.</p>
-            
-            <img class="project-img" src="images/ros2-project.jpg" alt="[Insert your ROS2 map/nodes photo here]">
-        </section>
+  <!-- ==========================================================================
+       INTERACTIVE FUNCTIONALITY (Vanilla JS)
+       ========================================================================== -->
+  <script>
+    /* ── ANIMATION & SURBRILLANCE DU BOUTON SAY HELLO ── */
+    document.getElementById('say-hello-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const contactBlock = document.getElementById('contact-minimal');
+      
+      // Si l'utilisateur est sur mobile, on ouvre d'abord la barre de navigation latérale
+      if (window.innerWidth <= 992) {
+        document.body.classList.add('nav-open');
+        document.getElementById('hamburger-icon').className = 'fa-solid fa-xmark';
+      }
+      
+      // Déclenche l'animation de pulsation en réinitialisant la classe CSS
+      contactBlock.classList.remove('flash-highlight');
+      void contactBlock.offsetWidth; // Forcer le recalcul du layout pour rejouer l'animation
+      contactBlock.classList.add('flash-highlight');
+      
+      // Scroll doux vers l'élément de contact s'il est hors de l'écran visible dans la barre
+      contactBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
 
-        <!-- AI PROJECT 1 (LEFT EMPTY) -->
-        <section id="ia-project-1">
-            <h2>🧠 AI Project n°1: Supervised Learning Pipeline for food detection</h2>
-            <p>Implementation with a 70 hour-video tuto on google scholar an AI thaht have leanred to reconized foods </p>
-            
-            <img class="project-img" src="images/ros2-project.jpg" alt="[Insert your ROS2 map/nodes photo here]">
-        </section>
+    /* ── MOBILE NAVBAR TOGGLE ── */
+    function toggleNav() {
+      const body = document.body;
+      const icon = document.getElementById('hamburger-icon');
+      
+      body.classList.toggle('nav-open');
+      if (body.classList.contains('nav-open')) {
+        icon.className = 'fa-solid fa-xmark';
+      } else {
+        icon.className = 'fa-solid fa-bars';
+      }
+    }
 
-        <!-- AI PROJECT 2 -->
-        <section id="ia-project-2">
-            <h2>🤖 AI Project n°2: Simulation and Guidance of duckiebot by Reinforcement Learning</h2>
-            <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
+    function closeNav() {
+      document.body.classList.remove('nav-open');
+      document.getElementById('hamburger-icon').className = 'fa-solid fa-bars';
+    }
 
-            <img class="project-img" src="https://images.unsplash.com/photo-1617791160505-6f006e121980?auto=format&fit=crop&w=800&q=80" alt="Neural Network Simulation">
-        </section>
-    </div>
+    /* ── ACTIVE NAV STATE ON SCROLL (Intersection Observer) ── */
+    const targets = document.querySelectorAll('section, .project-article');
+    const navItems = document.querySelectorAll('.nav-links li');
 
+    const observerOptions = {
+      root: null,
+      threshold: 0.15, 
+      rootMargin: "-10% 0px -60% 0px" 
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          if (!id) return;
+
+          navItems.forEach(item => {
+            const anchor = item.querySelector('a');
+            if (anchor) {
+              const href = anchor.getAttribute('href');
+              if (href === `#${id}`) {
+                navItems.forEach(n => n.classList.remove('active'));
+                item.classList.add('active');
+              }
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    targets.forEach(target => {
+      if (target.id) {
+        observer.observe(target);
+      }
+    });
+  </script>
 </body>
 </html>
