@@ -338,8 +338,8 @@
        ========================================================================== */
     .content-wrapper {
       margin-left: 290px;
-      padding: 4rem 5rem;
-      max-width: 1250px; /* Expanded slightly to prevent central compression */
+      padding: 4rem 3.5rem; /* Reduced horizontal padding to bring content closer to boundaries */
+      max-width: 100%;      /* Allows text to stretch fully across the available screen width */
       position: relative;
       z-index: 1;
     }
