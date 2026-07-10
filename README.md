@@ -841,7 +841,7 @@
           <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
           <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
           <p class="hero-sub">
-            Welcome to my personal project portfolio: a bref presentation and some projects.
+            Welcome to my portfolio: a brief presentation and some projects.
           </p>
           
           <!-- Three requested pill-shaped action buttons -->
@@ -884,7 +884,7 @@
       <span class="eyebrow">Professional Tracks</span>
       <h2 class="section-title">The <em>GMA</em> Experience</h2>
       <p class="paragraph">
-        Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed perfectly summarize what GMA is all about.
+        Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed summarize quite well what GMA is about.
       </p>
       <p class="paragraph">
         At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, at <strong>Metallicadour</strong> (and through my academic continuation), I mastered the operation and control theory of industrial robotic arms. 
