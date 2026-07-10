@@ -773,6 +773,10 @@
       <p class="paragraph">
         Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD), Noise, Vibration, and Harshness (NVH) or Partial Differential Equations (PDE) for example.
       </p>
+      <div class="media-row">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/72a4edc1369b97d542c935f5e171613c8af7bd76/20260511_113120%20(1).jpg" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/b6ca105b582d8e456535b538616a6aab6c2c9eb8/Capture%20d'%C3%A9cran%202026-07-10%20231935.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+          </div>
     </section>
 
     <!-- ════════════════════════════
@@ -837,7 +841,6 @@
           </div>
           <h3>🔌 ROS2 Autonomous</h3>
           <p>I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomously how to code in ROS 2. It was my first experience with ROS.</p>
-          <img class="project-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80" alt="ROS2 Navigation Simulation" onerror="this.style.display='none'" style="margin-top: 15px; width: 100%; border-radius: 8px;">
         </article>
 
         <!-- Project 4: Supervised Vision -->
@@ -874,7 +877,10 @@
           <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
           
           <div class="media-row">
-            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212831.png" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+            <video class="project-video" autoplay loop muted playsinline>
+              <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/72a4edc1369b97d542c935f5e171613c8af7bd76/20260710_115740_1%20(1).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
           </div>
         </article>
@@ -896,9 +902,11 @@
         <p class="paragraph">
           While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
         </p>
+      <div class="media-row">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/72a4edc1369b97d542c935f5e171613c8af7bd76/20230624_182522%20(1).jpg" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+          </div>
       </div>
-
-      <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Mountain Road Expedition Van" onerror="this.style.display='none'" style="margin-top: 15px; width: 100%; border-radius: 8px;">
     </section>
 
     <footer></footer>
