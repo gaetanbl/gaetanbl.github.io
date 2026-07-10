@@ -893,11 +893,11 @@ figcaption.caption {
 
            <div class="media-row">
             <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/d542337f973712e144f2982fbe4898fb97f34b7d/20260711_002642.jpg" alt="Robotics Development Board" onerror="this.style.display='none'">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d542337f973712e144f2982fbe4898fb97f34b7d/20260711_002642.jpg" alt="Robotics Development Board" onerror="this.style.display='none'">
               <figcaption class="caption">Robot used with ROS2</figcaption>
             </figure>
             <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/blob/d542337f973712e144f2982fbe4898fb97f34b7d/Capture%20d'%C3%A9cran%202026-07-11%20002404.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d542337f973712e144f2982fbe4898fb97f34b7d/Capture%20d'%C3%A9cran%202026-07-11%20002404.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
               <figcaption class="caption">Kinematic Model of the Four Mecanum Wheeled Mobile Robot</figcaption>
             </figure>
           </div>
