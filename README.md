@@ -639,6 +639,33 @@
 </head>
 <body>
 
+<!-- ── AJOUT DU CSS POUR LES IMAGES COTE A COTE ── -->
+  <style>
+    .media-row {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .media-row .project-img,
+    .media-row .project-video {
+      flex: 1;
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .media-row {
+        flex-direction: column;
+      }
+      .media-row .project-img,
+      .media-row .project-video {
+        width: 100%;
+      }
+    }
+  </style>
+
   <!-- ── MOBILE HEADER ── -->
   <header class="mobile-header">
     <div class="mobile-logo">G<em>B</em>.</div>
@@ -769,8 +796,14 @@
           </div>
           <h3>✈️ INS'Aérien Club</h3>
           <p>Founded and managed an open-access FPV drone club at INSA Rennes: creation of quick flying machine, tutoring how to fly and I have freely captured a lot of event on and outside of my school campus.</p>
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/1918aba69b07d2b2eb488313b6324177da91e821/Capture%20d'%C3%A9cran%202026-07-10%20212132d.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/1918aba69b07d2b2eb488313b6324177da91e821/Enregistrement%202026-07-10%20211746.mp4" alt="FPV Drone Flying" onerror="this.style.display='none'">
+          
+          <div class="media-row">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/1918aba69b07d2b2eb488313b6324177da91e821/Capture%20d'%C3%A9cran%202026-07-10%20212132d.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
+            <video class="project-video" autoplay loop muted playsinline>
+              <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/1918aba69b07d2b2eb488313b6324177da91e821/Enregistrement%202026-07-10%20211746.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </article>
 
         <!-- Project 2: Robotics Cup C++ -->
@@ -785,8 +818,11 @@
           </div>
           <h3>⚙️ Robotics Cup C++</h3>
           <p>Embedded systems programming within the INSA Rennes school robotics club in C++, I have discover the pleasure of low level programmation.</p>
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213148.png" alt="Robotics Development Board" onerror="this.style.display='none'">
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213333.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
+          
+          <div class="media-row">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213148.png" alt="Robotics Development Board" onerror="this.style.display='none'">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20213333.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
+          </div>
         </article>
 
         <!-- Project 3: ROS2 Autonomous -->
@@ -800,8 +836,8 @@
             <span class="proj-year">Project #2</span>
           </div>
           <h3>🔌 ROS2 Autonomous</h3>
-          <p>I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomulsly how code in ROS 2. It was my first expereince with ROS.</p>
-          <img class="project-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80" alt="ROS2 Navigation Simulation" onerror="this.style.display='none'">
+          <p>I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomously how to code in ROS 2. It was my first experience with ROS.</p>
+          <img class="project-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80" alt="ROS2 Navigation Simulation" onerror="this.style.display='none'" style="margin-top: 15px; width: 100%; border-radius: 8px;">
         </article>
 
         <!-- Project 4: Supervised Vision -->
@@ -815,10 +851,12 @@
             <span class="proj-year">AI Project #1</span>
           </div>
           <h3>🧠 Supervised Vision</h3>
-          <p>Implementation with a 70 hour-video tuto on google scholar an AI thaht have leanred to reconized foods</p>
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" onerror="this.style.display='none'">
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" onerror="this.style.display='none'">
-        </article>
+          <p>Implementation with a 70 hour-video tuto on google scholar an AI that have learned to reconize foods.</p>
+          
+          <div class="media-row">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" alt="Supervised Vision 1" onerror="this.style.display='none'">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
+          </div>
         </article>
 
         <!-- Project 5: Duckiebot RL -->
@@ -834,8 +872,11 @@
           </div>
           <h3>🤖 Duckiebot RL</h3>
           <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212831.png" alt="Deep RL Training Graph" onerror="this.style.display='none'">
-          <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="FPV Drone Flying" onerror="this.style.display='none'">
+          
+          <div class="media-row">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212831.png" alt="Deep RL Training Graph" onerror="this.style.display='none'">
+            <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+          </div>
         </article>
 
       </div>
@@ -853,11 +894,11 @@
           This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
         </p>
         <p class="paragraph">
-          While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with frinds, or trekking alone for 4 days in the Dolomites sleeping under the stars.
+          While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
         </p>
       </div>
 
-      <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Mountain Road Expedition Van" onerror="this.style.display='none'">
+      <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Mountain Road Expedition Van" onerror="this.style.display='none'" style="margin-top: 15px; width: 100%; border-radius: 8px;">
     </section>
 
     <footer></footer>
@@ -871,18 +912,15 @@
       
       const contactBlock = document.getElementById('contact-minimal');
       
-      // Si l'utilisateur est sur mobile, on ouvre d'abord la barre de navigation latérale
       if (window.innerWidth <= 992) {
         document.body.classList.add('nav-open');
         document.getElementById('hamburger-icon').className = 'fa-solid fa-xmark';
       }
       
-      // Déclenche l'animation de pulsation en réinitialisant la classe CSS
       contactBlock.classList.remove('flash-highlight');
-      void contactBlock.offsetWidth; // Forcer le recalcul du layout pour rejouer l'animation
+      void contactBlock.offsetWidth; 
       contactBlock.classList.add('flash-highlight');
       
-      // Scroll doux vers l'élément de contact s'il est hors de l'écran visible dans la barre
       contactBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
 
