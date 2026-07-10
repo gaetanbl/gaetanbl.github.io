@@ -841,7 +841,7 @@
           <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
           <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
           <p class="hero-sub">
-            Welcome to my personal project portfolio. I explore fields where automation, robotics, hardware design, and intelligent controls meet.
+            Welcome to my personal project portfolio: a bref presentation and some projects.
           </p>
           
           <!-- Three requested pill-shaped action buttons -->
@@ -875,16 +875,8 @@
             <span class="badge-label">Internships</span>
           </div>
           <div class="badge-card">
-            <span class="badge-num">4</span>
+            <span class="badge-num">3</span>
             <span class="badge-label">Languages</span>
-          </div>
-          <div class="badge-card">
-            <span class="badge-num">GMA</span>
-            <span class="badge-label">Engineering</span>
-          </div>
-          <div class="badge-card">
-            <span class="badge-num">FPV</span>
-            <span class="badge-label">Drone Pilot</span>
           </div>
         </div>
       </div>
@@ -908,7 +900,7 @@
         At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, at <strong>Metallicadour</strong> (and through my academic continuation), I mastered the operation and control theory of industrial robotic arms. 
       </p>
       <p class="paragraph">
-        Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD) and Partial Differential Equations (PDE).
+        Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD), Noise, Vibration, and Harshness (NVH) or Partial Differential Equations (PDE) for example.
       </p>
     </section>
 
