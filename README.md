@@ -338,8 +338,8 @@
        ========================================================================== */
     .content-wrapper {
       margin-left: 290px;
-      padding: 4rem 3.5rem; 
-      max-width: 1000px;    /* FIX: Limite la largeur du contenu pour une lecture optimale */
+      padding: 4rem 3.5rem; /* Reduced horizontal padding to bring content closer to boundaries */
+      max-width: 100%;      /* Allows text to stretch fully across the available screen width */
       position: relative;
       z-index: 1;
     }
@@ -695,215 +695,6 @@
     }
 
     /* ==========================================================================
-       GEMINI API CHAT INTEGRATION STYLING
-       ========================================================================== */
-    .ai-chat-container {
-      background: var(--bg-panel);
-      border: 1px solid var(--border-color);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      height: 550px;
-    }
-
-    .ai-chat-header {
-      background: rgba(255, 93, 56, 0.04);
-      padding: 1.2rem 1.8rem;
-      border-bottom: 1px solid var(--border-color);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .ai-header-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-family: var(--font-sans);
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .ai-header-status {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.75rem;
-      color: var(--accent);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--accent);
-      animation: pulseGlow 1.8s infinite;
-    }
-
-    @keyframes pulseGlow {
-      0% { transform: scale(0.95); opacity: 0.5; }
-      50% { transform: scale(1.15); opacity: 1; }
-      100% { transform: scale(0.95); opacity: 0.5; }
-    }
-
-    .ai-chat-feed {
-      flex: 1;
-      overflow-y: auto;
-      padding: 1.5rem 1.8rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      background: rgba(248, 246, 241, 0.2);
-    }
-
-    .ai-message {
-      max-width: 80%;
-      padding: 0.9rem 1.2rem;
-      border-radius: 14px;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    .ai-message.user {
-      align-self: flex-end;
-      background: var(--text-main);
-      color: var(--bg-dark);
-      border-bottom-right-radius: 4px;
-    }
-
-    .ai-message.bot {
-      align-self: flex-start;
-      background: var(--bg-panel-hover);
-      color: var(--text-main);
-      border-bottom-left-radius: 4px;
-      border: 1px solid var(--border-color);
-    }
-
-    .ai-message-loading {
-      align-self: flex-start;
-      background: var(--bg-panel-hover);
-      color: var(--text-muted);
-      border-radius: 14px;
-      padding: 0.9rem 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.9rem;
-    }
-
-    .loading-spinner {
-      width: 16px;
-      height: 16px;
-      border: 2px solid rgba(255, 93, 56, 0.2);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    .ai-chat-suggestions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 0.8rem 1.8rem;
-      background: rgba(248, 246, 241, 0.4);
-      border-top: 1px solid var(--border-color);
-    }
-
-    .ai-chip {
-      background: var(--bg-panel);
-      border: 1px solid var(--border-color);
-      color: var(--text-muted);
-      padding: 0.4rem 0.8rem;
-      border-radius: 30px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-
-    .ai-chip:hover {
-      border-color: var(--accent);
-      color: var(--text-main);
-      background: rgba(255, 93, 56, 0.05);
-    }
-
-    .ai-chat-input-bar {
-      padding: 1rem 1.8rem;
-      background: var(--bg-panel);
-      border-top: 1px solid var(--border-color);
-      display: flex;
-      gap: 12px;
-    }
-
-    .ai-chat-input {
-      flex: 1;
-      background: var(--bg-dark);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 0.8rem 1.2rem;
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
-      color: var(--text-main);
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .ai-chat-input:focus {
-      border-color: var(--accent);
-    }
-
-    .ai-chat-send {
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      padding: 0 1.5rem;
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .ai-chat-send:hover {
-      background: #e04b27;
-    }
-
-    /* Key input sub-bar (optional for custom keys) */
-    .ai-key-disclosure {
-      padding: 0.5rem 1.8rem;
-      background: rgba(0,0,0,0.02);
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border-color);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .ai-key-input {
-      border: none;
-      background: transparent;
-      outline: none;
-      color: var(--text-main);
-      font-family: monospace;
-      width: 180px;
-      text-align: right;
-      border-bottom: 1px dashed var(--text-muted);
-    }
-
-    /* ==========================================================================
        FOOTER
        ========================================================================== */
     footer {
@@ -998,7 +789,6 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li class="active"><a href="#introduction" onclick="closeNav()"><i class="fa-solid fa-user"></i> Introduction</a></li>
-          <li><a href="#ai-assistant" onclick="closeNav()"><i class="fa-solid fa-robot"></i> Talk to my AI Twin</a></li>
           <li><a href="#gma-internships" onclick="closeNav()"><i class="fa-solid fa-graduation-cap"></i> GMA Internships</a></li>
           
           <!-- Category title for projects -->
@@ -1051,7 +841,7 @@
           <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
           <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
           <p class="hero-sub">
-            Welcome to my personal project portfolio. I explore fields where automation, robotics, hardware design, and intelligent controls meet.
+            Welcome to my portfolio: a brief presentation and some projects.
           </p>
           
           <!-- Three requested pill-shaped action buttons -->
@@ -1063,17 +853,7 @@
               Say hello →
             </a>
             <a class="btn btn-accent" href="#van-conversion">
-              Van conversion summary
-            </a>
-          </div>
-
-          <!-- Circular social tags underneath, just like Yannis -->
-          <div class="socials-row">
-            <a href="https://www.linkedin.com/in/gaetan-baylou-lanot-72931b177/" target="_blank" rel="noopener" class="social-circle" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:Gaetan.baylou--lanot@insa-rennes.fr" class="social-circle" aria-label="Email">
-              <i class="fa-regular fa-envelope"></i>
+              Personality
             </a>
           </div>
         </div>
@@ -1085,16 +865,8 @@
             <span class="badge-label">Internships</span>
           </div>
           <div class="badge-card">
-            <span class="badge-num">4</span>
+            <span class="badge-num">3</span>
             <span class="badge-label">Languages</span>
-          </div>
-          <div class="badge-card">
-            <span class="badge-num">GMA</span>
-            <span class="badge-label">Engineering</span>
-          </div>
-          <div class="badge-card">
-            <span class="badge-num">FPV</span>
-            <span class="badge-label">Drone Pilot</span>
           </div>
         </div>
       </div>
@@ -1106,73 +878,19 @@
     </section>
 
     <!-- ════════════════════════════
-         INTEGRATED GEMINI LLM INTERACTIVE PLAYGROUND
-         ════════════════════════════ -->
-    <section id="ai-assistant">
-      <span class="eyebrow">AI Integration</span>
-      <h2 class="section-title">Ask My <em>AI Twin</em></h2>
-      <p class="paragraph">
-        I integrated this interactive AI Twin leveraging the Google Gemini API. It is fully trained on my real background, course studies, internships, and robotics projects. Pick one of the quick questions below or write a custom query to explore my academic path and control theory insights!
-      </p>
-
-      <div class="ai-chat-container">
-        <div class="ai-chat-header">
-          <div class="ai-header-title">
-            <i class="fa-solid fa-robot" style="color: var(--accent);"></i>
-            <span>Gaëtan's Digital Twin</span>
-          </div>
-          <div class="ai-header-status">
-            <span class="status-dot"></span>
-            <span>Gemini Active</span>
-          </div>
-        </div>
-
-        <!-- Chat Feed -->
-        <div class="ai-chat-feed" id="chatFeed">
-          <div class="ai-message bot">
-            Bonjour ! Je suis le jumeau numérique IA de Gaëtan. Posez-moi des questions sur mes études à l'INSA Rennes, mes expériences de codage (ROS2, C++), le Machine Learning, ou la façon dont j'ai aménagé mon van !
-          </div>
-        </div>
-
-        <!-- Smart Recommendation Chips -->
-        <div class="ai-chat-suggestions">
-          <button class="ai-chip" onclick="sendSuggested('Quels algorithmes de RL as-tu utilisés pour Duckiebot ?')">🤖 Duckiebot RL</button>
-          <button class="ai-chip" onclick="sendSuggested('Parle-moi de ton expérience chez XSun et Decathlon.')">🎓 Stages GMA</button>
-          <button class="ai-chip" onclick="sendSuggested('Comment as-tu aménagé ton van de tes propres mains ?')">🚐 Projet Van</button>
-          <button class="ai-chip" onclick="sendSuggested('Comment as-tu appris à maîtriser ROS2 ?')">🔌 Auto-formation ROS2</button>
-        </div>
-
-        <!-- Input Bar -->
-        <div class="ai-chat-input-bar">
-          <input type="text" id="chatInput" class="ai-chat-input" placeholder="Posez une question sur mes projets d'ingénierie..." onkeydown="handleInputKey(event)">
-          <button class="ai-chat-send" onclick="submitUserMessage()">Send</button>
-        </div>
-
-        <!-- Optional Key configuration (Leave empty to use automatically inside Canvas) -->
-        <div class="ai-key-disclosure">
-          <span>⚙️ Intégration Gemini 3.1 Flash</span>
-          <div>
-            <label for="userKey">Clé d'accès optionnelle: </label>
-            <input type="password" id="userKey" class="ai-key-input" placeholder="Laisser vide (Clé Canvas auto)">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════════════════════════
          SECTION 2: PROFESSIONAL TRACKS (Clean Text Structure)
          ════════════════════════════ -->
     <section id="gma-internships">
       <span class="eyebrow">Professional Tracks</span>
       <h2 class="section-title">The <em>GMA</em> Experience</h2>
       <p class="paragraph">
-        Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed perfectly summarize what GMA is all about.
+        Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed summarize quite well what GMA is about.
       </p>
       <p class="paragraph">
         At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, at <strong>Metallicadour</strong> (and through my academic continuation), I mastered the operation and control theory of industrial robotic arms. 
       </p>
       <p class="paragraph">
-        Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD) and Partial Differential Equations (PDE).
+        Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD), Noise, Vibration, and Harshness (NVH) or Partial Differential Equations (PDE) for example.
       </p>
     </section>
 
@@ -1286,127 +1004,9 @@
   </main>
 
   <!-- ==========================================================================
-       INTERACTIVE FUNCTIONALITY (Vanilla JS & API calling)
+       INTERACTIVE FUNCTIONALITY (Vanilla JS & scroll events)
        ========================================================================== -->
   <script>
-    /* ── GEMINI API INTERACTION CODENAME: JUMEAU NUMÉRIQUE ── */
-    async function askGemini(promptText) {
-      const customKeyInput = document.getElementById('userKey').value.trim();
-      // Leave empty for standard canvas automatic runtime key provisioning
-      const apiKey = customKeyInput || ""; 
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
-
-      // Detailed grounding background so the AI Twin acts precisely like Gaëtan
-      const identityGrounding = `
-        You are the high-fidelity professional digital twin of Gaëtan Baylou-Lanot.
-        Represent him with a passionate, friendly, technically precise, and adventurous voice.
-        
-        Information about Gaëtan Baylou-Lanot:
-        - Curriculum: Mechanical and Control Engineering Student (GMA) at INSA Rennes. Class of 2026.
-        - Technical Core: Advanced control theory, hardware engineering, robotics design, dynamic systems modeling, CFD (Computational Fluid Dynamics), and PDE (Partial Differential Equations).
-        - Stages / Internships:
-          1. XSun: Applied finite element analysis (FEA) and materials science.
-          2. ADDLAB (Decathlon): Advanced 3D modeling and additive manufacturing.
-          3. Metallicadour: Industrial robotic arms control, path planning, operation.
-        - Core Technical Projects:
-          1. INS'Aérien Club: Founded FPV drone association. Instructed piloting, created agile flying rigs, aerial photography.
-          2. Robotics Cup C++: Embedded firmware development for competitive robots at the club level. Low-level pleasure.
-          3. ROS2 Autonomous: Auto-didactic mini-robot navigation in ROS2 (self-borrowed robot).
-          4. Supervised Vision: 70-hour ML tutorial tracking to build food recognition models.
-          5. Duckiebot RL: Best internship, Docker, Isaac Gym simulation, WSL environments, Deep Reinforcement Learning with Actor-Critic systems (SAC & PPO).
-        - Personality & Adventure:
-          - Extremely outgoing, cheerful, team-oriented.
-          - Hand-converted a full expedition van over 3 years with his grandfather.
-          - Enjoys extreme wilderness: slept outdoors in -15°C, camped under kayak hulls in heavy rain, hiked 4 days in the Dolomites, interrailed Europe.
-        
-        Guidelines:
-        - Respond in the language of the prompt (French if the query is French, English if English).
-        - Keep answers concise, highly specific, and structured.
-        - If asked technical questions about automatic control, state-space models, or RL, answer with the academic brilliance of a senior INSA student.
-      `;
-
-      const payload = {
-        contents: [{
-          parts: [{ text: promptText }]
-        }],
-        systemInstruction: {
-          parts: [{ text: identityGrounding }]
-        }
-      };
-
-      try {
-        const response = await fetch(apiUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP Error Status: ${response.status}`);
-        }
-
-        const json = await response.json();
-        return json.candidates?.[0]?.content?.parts?.[0]?.text || "Je n'ai pas pu générer de réponse pour le moment.";
-      } catch (err) {
-        console.error("Gemini API Error details:", err);
-        return `Désolé ! Une erreur est survenue lors de l'accès à mon jumeau numérique. Assurez-vous d'avoir configuré une clé d'accès ou d'être connecté au réseau. (Erreur: ${err.message})`;
-      }
-    }
-
-    /* ── STREAMING_CHUNK: Hooking up chat input and scroll behaviors ── */
-    function handleInputKey(event) {
-      if (event.key === 'Enter') {
-        submitUserMessage();
-      }
-    }
-
-    async function submitUserMessage() {
-      const inputEl = document.getElementById('chatInput');
-      const query = inputEl.value.trim();
-      if (!query) return;
-
-      // Clear input
-      inputEl.value = "";
-      
-      await addMessageToFeed(query, 'user');
-      await executeAIResponse(query);
-    }
-
-    async function sendSuggested(suggestedText) {
-      await addMessageToFeed(suggestedText, 'user');
-      await executeAIResponse(suggestedText);
-    }
-
-    async function executeAIResponse(queryText) {
-      // Add a loading message
-      const feed = document.getElementById('chatFeed');
-      const loadingDiv = document.createElement('div');
-      loadingDiv.className = 'ai-message-loading';
-      loadingDiv.id = 'ai-loading';
-      loadingDiv.innerHTML = `<span class="loading-spinner"></span> <span>Mon jumeau numérique réfléchit...</span>`;
-      feed.appendChild(loadingDiv);
-      feed.scrollTop = feed.scrollHeight;
-
-      // Request API response
-      const reply = await askGemini(queryText);
-      
-      // Remove loading indicator
-      const activeLoader = document.getElementById('ai-loading');
-      if (activeLoader) activeLoader.remove();
-
-      // Add response message
-      await addMessageToFeed(reply, 'bot');
-    }
-
-    async function addMessageToFeed(text, sender) {
-      const feed = document.getElementById('chatFeed');
-      const msgDiv = document.createElement('div');
-      msgDiv.className = `ai-message ${sender}`;
-      msgDiv.innerText = text;
-      feed.appendChild(msgDiv);
-      feed.scrollTop = feed.scrollHeight;
-    }
-
     /* ── ANIMATION & SURBRILLANCE DU BOUTON SAY HELLO ── */
     document.getElementById('say-hello-btn').addEventListener('click', function(e) {
       e.preventDefault();
@@ -1484,3 +1084,11 @@
   </script>
 </body>
 </html>
+```eof
+
+<!-- STREAMING_CHUNK: Concluding response and cache instructions -->
+J'ai reconstruit l'intégralité de la page en m'assurant que la classe `.content-wrapper` n'ait **aucune restriction artificielle de largeur maximale** (`max-width: 100%`) et que les textes d'articles ne soient plus limités. 
+
+Pour être sûr de voir le résultat sur votre hébergement GitHub Pages (qui met parfois plusieurs minutes à mettre à jour les fichiers en cache) :
+* Ouvrez votre lien `github.io` dans une **fenêtre de navigation privée**.
+* Ou effectuez un **rafraîchissement forcé** en faisant `Ctrl + F5` (Windows) ou `Cmd + Shift + R` (Mac).
