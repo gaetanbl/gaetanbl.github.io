@@ -666,20 +666,29 @@
     }
 
     figure.media-item {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      width: 100%;
-    }
-    
-    figcaption.caption {
-      font-size: 0.85rem;
-      color: var(--text-secondary, #888); /* S'adaptera à ton thème */
-      text-align: center;
-      font-style: italic;
-      line-height: 1.4;
-    }
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1; /* Force la figure à prendre toute la largeur disponible dans la ligne */
+  min-width: 0; /* Empêche le contenu de faire déborder la flexbox */
+}
+
+/* On s'assure que les images et vidéos s'étirent bien aux bords de la figure */
+figure.media-item .project-img,
+figure.media-item .project-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Optionnel, mais garde un ratio propre si les images ont des tailles différentes */
+}
+
+figcaption.caption {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #888);
+  text-align: center;
+  font-style: italic;
+  line-height: 1.4;
+}
   </style>
 
   <!-- ── MOBILE HEADER ── -->
@@ -789,10 +798,17 @@
       <p class="paragraph">
         Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD), Noise, Vibration, and Harshness (NVH) or Partial Differential Equations (PDE) for example.
       </p>
+      
       <div class="media-row">
-        <!-- Liens corrigés (suppression de /blob/) -->
-        <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20260511_113120%20(1).jpg" alt="Deep RL Training Graph" onerror="this.style.display='none'">
-        <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/b6ca105b582d8e456535b538616a6aab6c2c9eb8/Capture%20d'%C3%A9cran%202026-07-10%20231935.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+        <figure class="media-item">
+          <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20260511_113120%20(1).jpg" alt="Programming a Stäubli robotic arm" onerror="this.style.display='none'">
+          <figcaption class="caption">4th-year project: programming a Stäubli robotic arm</figcaption>
+        </figure>
+        
+        <figure class="media-item">
+          <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/b6ca105b582d8e456535b538616a6aab6c2c9eb8/Capture%20d'%C3%A9cran%202026-07-10%20231935.png" alt="XSun SX0 flight demonstration" onerror="this.style.display='none'">
+          <figcaption class="caption">Internship at XSun: flight demonstration of the SX0</figcaption>
+        </figure>
       </div>
     </section>
 
