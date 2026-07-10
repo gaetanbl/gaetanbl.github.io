@@ -77,18 +77,16 @@
     }
 
     .profile-avatar {
-      font-size: 2rem;
-      width: 52px;
-      height: 52px;
-      background: rgba(255, 93, 56, 0.1);
-      border: 1px solid rgba(255, 93, 56, 0.2);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-      box-shadow: 0 8px 24px rgba(255, 93, 56, 0.1);
-    }
+  width: 120px;          /* Taille de ton choix */
+  height: 120px;
+  border-radius: 50%;    /* Cercle parfait */
+  object-fit: cover;     /* Recadre proprement */
+  display: block;
+  margin: 0 auto 15px auto; /* Centre l'image et ajoute de l'espace en bas */
+  border: none;          /* Supprime la bordure colorée */
+  background: none;      /* Supprime l'arrière-plan */
+  box-shadow: none;      /* Supprime les effets d'ombre si présents */
+}
 
     .profile h1 {
       font-family: var(--font-serif);
@@ -703,10 +701,11 @@ figcaption.caption {
   <aside class="sidebar">
     <div class="sidebar-top">
       <div class="profile">
-        <div class="profile-avatar"><img src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/833fa949a7780289bcf8465770c654755098b111/ma%20tete.png" alt="Photo de Gaëtan" class="profile-avatar"></div>
-        <h1>Gaëtan <em>Baylou-Lanot</em></h1>
-        <p>Robotic - AI - physics</p>
-      </div>
+  <!-- On garde seulement l'image, la classe profile-avatar gère tout -->
+  <img src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/833fa949a7780289bcf8465770c654755098b111/ma%20tete.png" alt="Photo de Gaëtan" class="profile-avatar">
+  <h1>Gaëtan <em>Baylou-Lanot</em></h1>
+  <p>Robotic - AI - physics</p>
+</div>
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li class="active"><a href="#introduction" onclick="closeNav()"><i class="fa-solid fa-user"></i> Introduction</a></li>
