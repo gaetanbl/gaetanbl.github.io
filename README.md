@@ -4,27 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gaëtan Baylou-Lanot — Mechanical, Control &amp; AI Portfolio</title>
-  
-  <!-- Premium Typographies (Yannis style) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
-  
-  <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <style>
-    /* ==========================================================================
-       DESIGN SYSTEM (Obsidian Premium Tech Palette & Typography)
-       ========================================================================== */
     :root {
-      --bg-dark: #f8f6f1;         /* Premium Warm Cream/Beige Background */
-      --bg-panel: #fcfbfa;        /* Clean Off-White for Sidebar and Panels */
-      --bg-panel-hover: #f1ede4;  /* Soft warm hover state */
-      --accent: #ff5d38;          /* Tech Sunset Orange */
+      --bg-dark: #f8f6f1;          /* Premium Warm Cream/Beige Background */
+      --bg-panel: #fcfbfa;         /* Clean Off-White for Sidebar and Panels */
+      --bg-panel-hover: #f1ede4;   /* Soft warm hover state */
+      --accent: #ff5d38;           /* Tech Sunset Orange */
       --accent-rgb: 255, 93, 56;
-      --text-main: #1c1917;       /* Deep warm stone charcoal */
-      --text-muted: #6b6661;      /* Elegant stone/taupe muted gray */
+      --text-main: #1c1917;        /* Deep warm stone charcoal */
+      --text-muted: #6b6661;       /* Elegant stone/taupe muted gray */
       --border-color: rgba(27, 25, 23, 0.08); /* Sophisticated subtle border */
       --font-serif: 'DM Serif Display', serif;
       --font-sans: 'Space Grotesk', sans-serif;
@@ -61,9 +54,6 @@
       pointer-events: none;
     }
 
-    /* ==========================================================================
-       LAYOUT STRUCTURE & ANIMATED SIDEBAR
-       ========================================================================== */
     /* LEFT SIDEBAR (Desktop) */
     .sidebar {
       width: 290px;
@@ -241,7 +231,7 @@
       gap: 8px;
       text-decoration: none;
       color: var(--text-muted);
-      font-size: 0.7rem; /* Reduced text size for perfect discreet rendering */
+      font-size: 0.7rem; 
       line-height: 1.3;
       transition: color 0.2s;
     }
@@ -295,9 +285,6 @@
       animation: pulseHighlight 2s cubic-bezier(0.25, 1, 0.5, 1);
     }
 
-    /* ==========================================================================
-       MOBILE HEADER & MENU
-       ========================================================================== */
     .mobile-header {
       display: none;
       position: fixed;
@@ -333,13 +320,10 @@
       cursor: pointer;
     }
 
-    /* ==========================================================================
-       MAIN CONTENT CONTAINER
-       ========================================================================== */
     .content-wrapper {
       margin-left: 290px;
-      padding: 4rem 3.5rem; /* Reduced horizontal padding to bring content closer to boundaries */
-      max-width: 100%;      /* Allows text to stretch fully across the available screen width */
+      padding: 4rem 3.5rem; 
+      max-width: 100%;      
       position: relative;
       z-index: 1;
     }
@@ -353,9 +337,6 @@
       border-bottom: none;
     }
 
-    /* ==========================================================================
-       TYPOGRAPHY AND SUB-ELEMENTS
-       ========================================================================== */
     .eyebrow {
       display: inline-block;
       font-family: var(--font-sans);
@@ -414,75 +395,7 @@
       line-height: 1.7;
       margin-bottom: 1.5rem;
     }
-  </style>
-  <style>
-    /* ==========================================================================
-       HERO SIDE-BY-SIDE GRID LAYOUT (fixes vertical compression)
-       ========================================================================== */
-    .hero-layout-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1.2fr;
-      gap: 4rem;
-      align-items: center;
-      margin-bottom: 2rem;
-    }
 
-    @media (max-width: 1200px) {
-      .hero-layout-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
-    }
-
-    /* HERO BADGES GRID (Beautiful 2x2 cards inspired by Yannis screenshot) 
-    .hero-badge-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.2rem;
-    }
-
-    .badge-card {
-      background: var(--bg-panel);
-      border: 1px solid var(--border-color);
-      padding: 2.5rem 1.5rem;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
-      transition: all 0.3s ease;
-      text-align: center;
-      aspect-ratio: 1 / 1;
-    }
-
-    .badge-card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(255, 93, 56, 0.2);
-      box-shadow: 0 8px 24px rgba(255, 93, 56, 0.05);
-    }
-
-    .badge-card .badge-num {
-      font-family: var(--font-serif);
-      font-size: 3rem;
-      color: var(--text-main);
-      line-height: 1;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    .badge-card .badge-label {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-muted);
-    }*/
-
-    /* ==========================================================================
-       YANNIS HORIZONTAL BUTTONS AND SOCIALS ROW
-       ========================================================================== */
     .btn-container {
       display: flex;
       flex-wrap: wrap;
@@ -540,34 +453,6 @@
       transform: translateY(-2px);
     }
 
-    .socials-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 1.5rem;
-    }
-
-    .social-circle {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background-color: var(--bg-panel);
-      border: 1px solid var(--border-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: var(--text-main);
-      font-size: 1.1rem;
-      transition: all 0.2s ease;
-    }
-
-    .social-circle:hover {
-      color: #fff;
-      background-color: var(--text-main);
-      transform: scale(1.05);
-    }
-
     /* Sleek Info Prompt Box */
     blockquote.prompt-info {
       border-left: 4px solid var(--accent);
@@ -580,11 +465,9 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      max-width: 600px;
     }
 
-    /* ==========================================================================
-       SEQUENTIAL PROJECT ARTICLES (Pure Editorial Look - NO BUBBLES/CARDS)
-       ========================================================================== */
     .projects-stack {
       display: flex;
       flex-direction: column;
@@ -592,7 +475,7 @@
     }
 
     .project-article {
-      background-color: transparent; /* No bubble cards */
+      background-color: transparent; 
       border-bottom: 1px solid var(--border-color); /* Elegant thin separator line */
       padding-bottom: 4.5rem;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -659,9 +542,6 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
 
-    /* ==========================================================================
-       DISCREET MINIMAL CONTACT BLOCK (At the very bottom of the last section)
-       ========================================================================== */
     .discreet-contact-container {
       margin-top: 4.5rem;
       padding-top: 2rem;
@@ -694,9 +574,6 @@
       font-size: 1.1rem;
     }
 
-    /* ==========================================================================
-       FOOTER
-       ========================================================================== */
     footer {
       padding: 3rem 0 1.5rem 0;
       margin-top: 3rem;
@@ -706,14 +583,6 @@
       align-items: center;
     }
 
-    .footer-copy {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* ==========================================================================
-       RESPONSIVE MEDIA QUERIES
-       ========================================================================== */
     @media (max-width: 992px) {
       .sidebar {
         transform: translateX(-100%);
@@ -794,7 +663,7 @@
           <!-- Category title for projects -->
           <li class="nav-category-title">My projects:</li>
           
-          <!-- Nested Individual Project Links matching requested list -->
+          <!-- Nested Individual Project Links -->
           <li class="sub-item"><a href="#ins-aerien" onclick="closeNav()"><span class="dot-bullet"></span> INS'Aérien Club</a></li>
           <li class="sub-item"><a href="#code-project-1" onclick="closeNav()"><span class="dot-bullet"></span> Robotics Cup C++</a></li>
           <li class="sub-item"><a href="#code-project-2" onclick="closeNav()"><span class="dot-bullet"></span> ROS2 Autonomous</a></li>
@@ -806,7 +675,7 @@
       </nav>
     </div>
     
-    <!-- Sidebar Footer - Compact and highly discreet text sizes -->
+    <!-- Sidebar Footer -->
     <div class="sidebar-footer">
       <div class="discreet-contact-container" id="contact-minimal">
         <span class="eyebrow" style="margin-bottom: 0.2rem; font-size: 0.65rem; letter-spacing: 0.1em;">Get in Touch</span>
@@ -835,33 +704,31 @@
          SECTION 1: HERO / PROFILE & BIO
          ════════════════════════════ -->
     <section id="introduction">
-      <div class="hero-layout-grid">
-        <!-- Left Side: Hero Text, pill buttons, socials -->
-        <div class="hero-text-block">
-          <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
-          <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
-          <p class="hero-sub">
-            Welcome to my portfolio: a brief presentation and some projects.
-          </p>
-          
-          <!-- Three requested pill-shaped action buttons -->
-          <div class="btn-container">
-            <a class="btn btn-primary" href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" rel="noopener">
-              Download CV
-            </a>
-            <a class="btn btn-secondary" href="#contact-minimal" id="say-hello-btn">
-              Say hello
-            </a>
-            <a class="btn btn-accent" href="#van-conversion">
-              Personality
-            </a>
-          </div>
+      <div class="hero-text-block">
+        <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
+        <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
+        <p class="hero-sub">
+          Welcome to my portfolio: a brief presentation and some projects.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="btn-container">
+          <a class="btn btn-primary" href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" rel="noopener">
+            Download CV
+          </a>
+          <a class="btn btn-secondary" href="#contact-minimal" id="say-hello-btn">
+            Say hello
+          </a>
+          <a class="btn btn-accent" href="#van-conversion">
+            Personality
+          </a>
         </div>
 
-      <blockquote class="prompt-info">
-        <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i>
-        <span><strong>This page is currently being modified.</strong></span>
-      </blockquote>
+        <blockquote class="prompt-info">
+          <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i>
+          <span><strong>This page is currently being modified.</strong></span>
+        </blockquote>
+      </div>
     </section>
 
     <!-- ════════════════════════════
@@ -882,7 +749,7 @@
     </section>
 
     <!-- ════════════════════════════
-         SECTION 3: SEQUENTIAL PROJECTS (Pure Article Stack - No Bubbles)
+         SECTION 3: SEQUENTIAL PROJECTS (Pure Article Stack)
          ════════════════════════════ -->
     <section id="projects-container" style="border-bottom: none; padding-bottom: 0;">
       <span class="eyebrow">Technical Works</span>
@@ -970,7 +837,7 @@
     </section>
 
     <!-- ════════════════════════════
-         SECTION 4: PERSONALITY (The Van conversion) & DISCREET CONTACT
+         SECTION 4: PERSONALITY (The Van conversion)
          ════════════════════════════ -->
     <section id="van-conversion">
       <span class="eyebrow">Behind the Code</span>
@@ -988,11 +855,10 @@
       <img class="project-img" src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1200&q=80" alt="Mountain Road Expedition Van" onerror="this.style.display='none'">
     </section>
 
+    <footer></footer>
+
   </main>
 
-  <!-- ==========================================================================
-       INTERACTIVE FUNCTIONALITY (Vanilla JS & scroll events)
-       ========================================================================== -->
   <script>
     /* ── ANIMATION & SURBRILLANCE DU BOUTON SAY HELLO ── */
     document.getElementById('say-hello-btn').addEventListener('click', function(e) {
