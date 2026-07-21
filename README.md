@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
   <title>Gaëtan Baylou-Lanot — Mechanical, Control &amp; AI Portfolio</title>
+  <meta name="description" content="Portfolio of Gaëtan Baylou-Lanot, Mechanical, Control & AI Engineering student at INSA Rennes." />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Gaëtan Baylou-Lanot — Portfolio" />
+  <meta property="og:description" content="Mechanical, Control & AI Engineering projects." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
@@ -54,6 +64,11 @@
       pointer-events: none;
     }
 
+    /* Anchor Offset for Smooth Scroll on Mobile */
+    section, .project-article {
+      scroll-margin-top: 80px;
+    }
+
     /* LEFT SIDEBAR (Desktop) */
     .sidebar {
       width: 290px;
@@ -77,24 +92,22 @@
     }
 
     .profile-avatar {
-      width: 90px;           /* Taille réduite pour un meilleur équilibre */
+      width: 90px;
       height: 90px;
-      border-radius: 50%;    /* Cercle parfait */
-      object-fit: cover;     /* Maintient les proportions */
+      border-radius: 50%;
+      object-fit: cover;
       display: block;
-      margin: 0 auto 15px auto; 
-      
-      /* Ajout de style design */
-      border: 3px solid rgba(255, 255, 255, 0.8); /* Contour blanc élégant */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombre douce et naturelle */
-      transition: transform 0.3s ease;            /* Petit effet au survol */
+      margin: 0 auto 15px auto;
+      border: 3px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
     }
     
     .profile-avatar:hover {
-      transform: scale(1.05); /* L'image grandit légèrement au survol */
+      transform: scale(1.05);
     }
 
-    .profile h1 {
+    .profile h2 {
       font-family: var(--font-serif);
       font-size: 1.35rem;
       font-weight: 400;
@@ -103,7 +116,7 @@
       color: var(--text-main);
     }
 
-    .profile h1 em {
+    .profile h2 em {
       font-family: var(--font-serif);
       color: var(--accent);
       font-style: italic;
@@ -127,7 +140,6 @@
       padding-right: 5px;
     }
 
-    /* Scrollbar for sidebar menu items if needed */
     .nav-links::-webkit-scrollbar {
       width: 3px;
     }
@@ -136,7 +148,6 @@
       border-radius: 10px;
     }
 
-    /* Navigation Category Labels */
     .nav-category-title {
       font-size: 0.72rem;
       text-transform: uppercase;
@@ -163,7 +174,6 @@
       border-left: 3px solid transparent;
     }
 
-    /* Nested project items */
     .nav-links li.sub-item {
       margin-left: 0.5rem;
     }
@@ -207,7 +217,7 @@
       transform: translateX(2px);
     }
 
-    /* Sidebar Footer & Discreet Contact */
+    /* Sidebar Footer & Contact */
     .sidebar-footer {
       border-top: 1px solid var(--border-color);
       padding-top: 1rem;
@@ -251,7 +261,7 @@
       text-align: center;
     }
 
-    /* ── ANIMATION DE SURBRILLANCE CONTACTS ── */
+    /* Animation Highlight */
     @keyframes pulseHighlight {
       0% {
         box-shadow: 0 0 0 0 rgba(255, 93, 56, 0);
@@ -327,7 +337,7 @@
     .content-wrapper {
       margin-left: 290px;
       padding: 4rem 3.5rem; 
-      max-width: 100%;      
+      max-width: 100%;     
       position: relative;
       z-index: 1;
     }
@@ -417,7 +427,7 @@
       font-size: 0.95rem;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 9999px; /* Completely rounded pill buttons */
+      border-radius: 9999px;
       transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       gap: 10px;
     }
@@ -457,7 +467,6 @@
       transform: translateY(-2px);
     }
 
-    /* Sleek Info Prompt Box */
     blockquote.prompt-info {
       border-left: 4px solid var(--accent);
       padding: 1.2rem 1.5rem;
@@ -480,7 +489,7 @@
 
     .project-article {
       background-color: transparent; 
-      border-bottom: 1px solid var(--border-color); /* Elegant thin separator line */
+      border-bottom: 1px solid var(--border-color);
       padding-bottom: 4.5rem;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
@@ -546,36 +555,44 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
 
-    .discreet-contact-container {
-      margin-top: 4.5rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border-color);
+    /* Side-by-side Media Row Layout */
+    .media-row {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .media-row .project-img,
+    .media-row .project-video {
+      flex: 1;
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
     }
 
-    .contact-row-minimal {
+    figure.media-item {
+      margin: 0;
       display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 1rem;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+      min-width: 0;
     }
 
-    .contact-item-discreet {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
+    figure.media-item .project-img,
+    figure.media-item .project-video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    figcaption.caption {
+      font-size: 0.85rem;
       color: var(--text-muted);
-      font-size: 0.95rem;
-      transition: color 0.2s;
-    }
-
-    .contact-item-discreet:hover {
-      color: var(--accent);
-    }
-
-    .contact-item-discreet i {
-      color: var(--accent);
-      font-size: 1.1rem;
+      text-align: center;
+      font-style: italic;
+      line-height: 1.4;
     }
 
     footer {
@@ -587,6 +604,7 @@
       align-items: center;
     }
 
+    /* Media Queries */
     @media (max-width: 992px) {
       .sidebar {
         transform: translateX(-100%);
@@ -612,6 +630,16 @@
 
       .project-article {
         padding-bottom: 3.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .media-row {
+        flex-direction: column;
+      }
+      .media-row .project-img,
+      .media-row .project-video {
+        width: 100%;
       }
     }
 
@@ -643,58 +671,6 @@
 </head>
 <body>
 
-<!-- ── AJOUT DU CSS POUR LES IMAGES COTE A COTE ── -->
-  <style>
-    .media-row {
-      display: flex;
-      gap: 15px;
-      margin-top: 15px;
-      width: 100%;
-    }
-    .media-row .project-img,
-    .media-row .project-video {
-      flex: 1;
-      width: 50%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    @media (max-width: 768px) {
-      .media-row {
-        flex-direction: column;
-      }
-      .media-row .project-img,
-      .media-row .project-video {
-        width: 100%;
-      }
-    }
-
-    figure.media-item {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  flex: 1; /* Force la figure à prendre toute la largeur disponible dans la ligne */
-  min-width: 0; /* Empêche le contenu de faire déborder la flexbox */
-}
-
-/* On s'assure que les images et vidéos s'étirent bien aux bords de la figure */
-figure.media-item .project-img,
-figure.media-item .project-video {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Optionnel, mais garde un ratio propre si les images ont des tailles différentes */
-}
-
-figcaption.caption {
-  font-size: 0.85rem;
-  color: var(--text-secondary, #888);
-  text-align: center;
-  font-style: italic;
-  line-height: 1.4;
-}
-  </style>
-
   <!-- ── MOBILE HEADER ── -->
   <header class="mobile-header">
     <div class="mobile-logo">G<em>B</em>.</div>
@@ -703,24 +679,21 @@ figcaption.caption {
     </button>
   </header>
 
-  <!-- ── LEFT SIDEBAR (Desktop & Animated Mobile Menu) ── -->
+  <!-- ── LEFT SIDEBAR ── -->
   <aside class="sidebar">
     <div class="sidebar-top">
       <div class="profile">
-  <!-- On garde seulement l'image, la classe profile-avatar gère tout -->
-  <img src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/833fa949a7780289bcf8465770c654755098b111/ma%20tete.png" alt="Photo de Gaëtan" class="profile-avatar">
-  <h1>Gaëtan <em>Baylou-Lanot</em></h1>
-  <p>Robotic - AI - physics</p>
-</div>
+        <img src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/833fa949a7780289bcf8465770c654755098b111/ma%20tete.png" alt="Photo de Gaëtan" class="profile-avatar">
+        <h2>Gaëtan <em>Baylou-Lanot</em></h2>
+        <p>Robotic - AI - physics</p>
+      </div>
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li class="active"><a href="#introduction" onclick="closeNav()"><i class="fa-solid fa-user"></i> Introduction</a></li>
           <li><a href="#gma-internships" onclick="closeNav()"><i class="fa-solid fa-graduation-cap"></i> GMA Internships</a></li>
           
-          <!-- Category title for projects -->
           <li class="nav-category-title">My projects:</li>
           
-          <!-- Nested Individual Project Links -->
           <li class="sub-item"><a href="#ins-aerien" onclick="closeNav()"><span class="dot-bullet"></span> INS'Aérien Club</a></li>
           <li class="sub-item"><a href="#code-project-1" onclick="closeNav()"><span class="dot-bullet"></span> Robotics Cup C++</a></li>
           <li class="sub-item"><a href="#code-project-2" onclick="closeNav()"><span class="dot-bullet"></span> ROS2 Autonomous</a></li>
@@ -754,12 +727,10 @@ figcaption.caption {
     </div>
   </aside>
 
-<!-- ── MAIN CONTENT AREA ── -->
+  <!-- ── MAIN CONTENT AREA ── -->
   <main class="content-wrapper">
 
-    <!-- ════════════════════════════
-         SECTION 1: HERO / PROFILE & BIO
-         ════════════════════════════ -->
+    <!-- SECTION 1: HERO -->
     <section id="introduction">
       <div class="hero-text-block">
         <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
@@ -768,7 +739,6 @@ figcaption.caption {
           Welcome to my portfolio: a brief introduction and a few projects, including my best work in the fields of programming and AI.
         </p>
         
-        <!-- Action Buttons -->
         <div class="btn-container">
           <a class="btn btn-primary" href="https://canva.link/ky3nhbgvb7r8ahv" target="_blank" rel="noopener">
             Download CV
@@ -788,9 +758,7 @@ figcaption.caption {
       </div>
     </section>
 
-    <!-- ════════════════════════════
-         SECTION 2: PROFESSIONAL TRACKS
-         ════════════════════════════ -->
+    <!-- SECTION 2: PROFESSIONAL TRACKS -->
     <section id="gma-internships">
       <span class="eyebrow">Professional Tracks</span>
       <h2 class="section-title">The <em>GMA</em> Experience</h2>
@@ -817,9 +785,7 @@ figcaption.caption {
       </div>
     </section>
 
-    <!-- ════════════════════════════
-         SECTION 3: SEQUENTIAL PROJECTS
-         ════════════════════════════ -->
+    <!-- SECTION 3: SEQUENTIAL PROJECTS -->
     <section id="projects-container" style="border-bottom: none; padding-bottom: 0;">
       <span class="eyebrow">Technical Works</span>
       <h2 class="section-title">Academic Tracks &amp; Technical Engineering Projects</h2>
@@ -891,7 +857,7 @@ figcaption.caption {
           <h3>🔌 ROS2 Autonomous</h3>
           <p>I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomously how to code in ROS 2. It was my first experience with ROS.</p>
 
-           <div class="media-row">
+          <div class="media-row">
             <figure class="media-item">
               <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d542337f973712e144f2982fbe4898fb97f34b7d/20260711_002642.jpg" alt="Robotics Development Board" onerror="this.style.display='none'">
               <figcaption class="caption">Robot used with ROS2</figcaption>
@@ -943,7 +909,6 @@ figcaption.caption {
           <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
           
           <div class="media-row">
-            <!-- Lien corrigé (suppression de /blob/) -->
             <figure class="media-item">
               <video class="project-video" autoplay loop muted playsinline>
                 <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20260710_115740_1%20(1).mp4" type="video/mp4">
@@ -960,58 +925,34 @@ figcaption.caption {
       </div>
     </section>
 
-    <!-- ════════════════════════════
-         SECTION 4: PERSONALITY (The Van conversion)
-         ════════════════════════════ -->
+    <!-- SECTION 4: PERSONALITY -->
     <section id="van-conversion">
       <span class="eyebrow">Behind the Code</span>
       <h2 class="section-title">🚐 Personality</h2>
       
       <div class="personality-text">
         <p class="paragraph">
-          This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
+          This isn't my first project, but it is definitely one of the ones I'm most proud of. Ove
         </p>
-        <p class="paragraph">
-          While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
-        </p>
-        
-        <div class="media-row">
-            <!-- Lien corrigé (suppression de /blob/) -->
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20230624_182522%20(1).jpg" alt="Van conversion" onerror="this.style.display='none'">
-              <figcaption class="caption">First step of the conversion: building the rear cabinet in 2022</figcaption>
-            </figure>
-            
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Van tour" onerror="this.style.display='none'">
-              <figcaption class="caption">At the start of the Belle-Île tour</figcaption>
-            </figure>
-        </div>
       </div>
     </section>
 
-    <footer></footer>
-
   </main>
 
+  <!-- ── JAVASCRIPT ── -->
   <script>
-    /* ── ANIMATION & SURBRILLANCE DU BOUTON SAY HELLO ── */
-    document.getElementById('say-hello-btn').addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      const contactBlock = document.getElementById('contact-minimal');
-      
-      if (window.innerWidth <= 992) {
-        document.body.classList.add('nav-open');
-        document.getElementById('hamburger-icon').className = 'fa-solid fa-xmark';
-      }
-      
-      contactBlock.classList.remove('flash-highlight');
-      void contactBlock.offsetWidth; 
-      contactBlock.classList.add('flash-highlight');
-      
-      contactBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    });
+    /* ── SAY HELLO BUTTON HIGHLIGHT ── */
+    const sayHelloBtn = document.getElementById('say-hello-btn');
+    if (sayHelloBtn) {
+      sayHelloBtn.addEventListener('click', (e) => {
+        const contactBlock = document.getElementById('contact-minimal');
+        if (!contactBlock) return;
+        contactBlock.classList.remove('flash-highlight');
+        void contactBlock.offsetWidth; 
+        contactBlock.classList.add('flash-highlight');
+        contactBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    }
 
     /* ── MOBILE NAVBAR TOGGLE ── */
     function toggleNav() {
@@ -1067,3 +1008,5 @@ figcaption.caption {
       }
     });
   </script>
+</body>
+</html>
