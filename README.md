@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- SEO Meta Tags -->
-  <title>Gaëtan Baylou-Lanot — Mechanical, Control &amp; AI Portfolio</title>
+  <title>Gaëtan Baylou--Lanot — Mechanical, Control &amp; AI Portfolio</title>
   <meta name="description" content="Portfolio of Gaëtan Baylou-Lanot, Mechanical, Control & AI Engineering student at INSA Rennes." />
   
   <!-- Open Graph / Social Media -->
