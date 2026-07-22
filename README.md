@@ -925,19 +925,38 @@
       </div>
     </section>
 
-    <!-- SECTION 4: PERSONALITY -->
+<!-- SECTION 4: PERSONALITY (The Van conversion) -->
     <section id="van-conversion">
       <span class="eyebrow">Behind the Code</span>
       <h2 class="section-title">🚐 Personality</h2>
       
       <div class="personality-text">
         <p class="paragraph">
-          This isn't my first project, but it is definitely one of the ones I'm most proud of. Ove
+          This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
         </p>
+        <p class="paragraph">
+          While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
+        </p>
+        
+        <div class="media-row">
+            <!-- Lien corrigé (suppression de /blob/) -->
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20230624_182522%20(1).jpg" alt="Van conversion" onerror="this.style.display='none'">
+              <figcaption class="caption">First step of the conversion: building the rear cabinet in 2022</figcaption>
+            </figure>
+            
+            <figure class="media-item">
+              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Van tour" onerror="this.style.display='none'">
+              <figcaption class="caption">At the start of the Belle-Île tour</figcaption>
+            </figure>
+        </div>
       </div>
     </section>
 
+    <footer></footer>
+
   </main>
+
 
   <!-- ── JAVASCRIPT ── -->
   <script>
