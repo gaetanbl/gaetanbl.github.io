@@ -888,7 +888,7 @@
               <figcaption class="caption">Summary output of my second model: desactivation of the gradient in order to reduce the trainable parameters</figcaption>
             </figure>
             <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/vision.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
+              <img class="project-img" src="https://github.com/gaetanbl/gaetanbl.github.io/blob/d4851539b943f516efef2fa0fa530906ff71a0ee/vision.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
               <figcaption class="caption">Prediction on FashionMNIST</figcaption>
             </figure>
           </div>
@@ -924,7 +924,7 @@
           <div class="media-row">
             <figure class="media-item">
               <video class="project-video" autoplay loop muted playsinline>
-                <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/1918aba69b07d2b2eb488313b6324177da91e821/Projet vidéo 5.mp4" type="video/mp4">
+                <source src="https://github.com/gaetanbl/gaetanbl.github.io/blob/d4851539b943f516efef2fa0fa530906ff71a0ee/Projet%20vid%C3%A9o%205.mp4">
               </video>
               <figcaption class="caption">First try to implement the CNN</figcaption>
             </figure>
