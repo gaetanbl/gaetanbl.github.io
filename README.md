@@ -854,121 +854,121 @@
             </div>
             <span class="proj-year">Project #2</span>
           </div>
-<h3>🔌 ROS2 Autonomous</h3>
-          <p>I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomously how to code in ROS 2. It was my first experience with ROS.</p>
-
-          <div class="media-row">
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d542337f973712e144f2982fbe4898fb97f34b7d/20260711_002642.jpg" alt="Robotics Development Board" onerror="this.style.display='none'">
-              <figcaption class="caption">Robot used with ROS2</figcaption>
-            </figure>
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d542337f973712e144f2982fbe4898fb97f34b7d/Capture%20d'%C3%A9cran%202026-07-11%20002404.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
-              <figcaption class="caption">Kinematic Model of the Four Mecanum Wheeled Mobile Robot</figcaption>
-            </figure>
+    <h3>🔌 ROS2 Autonomous</h3>
+              <p>I have kindly asked if I can borrow a mini robot at the computer science degree (next door building) to learn autonomously how to code in ROS 2. It was my first experience with ROS.</p>
+    
+              <div class="media-row">
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d542337f973712e144f2982fbe4898fb97f34b7d/20260711_002642.jpg" alt="Robotics Development Board" onerror="this.style.display='none'">
+                  <figcaption class="caption">Robot used with ROS2</figcaption>
+                </figure>
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d542337f973712e144f2982fbe4898fb97f34b7d/Capture%20d'%C3%A9cran%202026-07-11%20002404.png" alt="Robotics Cup Event" onerror="this.style.display='none'">
+                  <figcaption class="caption">Kinematic Model of the Four Mecanum Wheeled Mobile Robot</figcaption>
+                </figure>
+              </div>
+            </article>
+    
+            <!-- Project 4: Supervised Vision -->
+            <article class="project-article" id="ia-project-1">
+              <div class="proj-meta-header">
+                <div class="tag-container">
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">Google Scholar</span>
+                  <span class="tag">ML Pipeline</span>
+                </div>
+                <span class="proj-year">AI Project #1</span>
+              </div>
+              <h3>🧠 Supervised Vision</h3>
+              <p>Implementation with a 70 hour-video tuto on google scholar an AI that have learned to reconize foods.</p>
+              
+              <div class="media-row">
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" alt="Supervised Vision 1" onerror="this.style.display='none'">
+                  <figcaption class="caption">Summary output of my second model: desactivation of the gradient in order to reduce the trainable parameters</figcaption>
+                </figure>
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d4851539b943f516efef2fa0fa530906ff71a0ee/vision.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
+                  <figcaption class="caption">Making predictions on the Fashion MNIST dataset</figcaption>
+                </figure>
+              </div>
+            </article>
+    
+            <!-- Project 5: Duckiebot RL -->
+            <article class="project-article" id="ia-project-2">
+              <div class="proj-meta-header">
+                <div class="tag-container">
+                  <span class="tag">Reinforcement Learning</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Isaac Lab</span>
+                  <span class="tag">Actor-Critic SAC/PPO</span>
+                </div>
+                <span class="proj-year">AI Project #2</span>
+              </div>
+              <h3>🤖 Duckiebot RL</h3>
+              <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
+              
+              <div class="media-row">
+                <figure class="media-item">
+                  <video class="project-video" autoplay loop muted playsinline>
+                    <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20260710_115740_1%20(1).mp4" type="video/mp4">
+                  </video>
+                  <figcaption class="caption">Duckiebot line following</figcaption>
+                </figure>
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
+                  <figcaption class="caption">Obstacle avoidance policy training on Isaac Sim</figcaption>
+                </figure>
+              </div>
+    
+              <div class="media-row">
+                <figure class="media-item">
+                  <video class="project-video" autoplay loop muted playsinline>
+                    <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d4851539b943f516efef2fa0fa530906ff71a0ee/Projet%20vid%C3%A9o%205.mp4" type="video/mp4">
+                  </video>
+                  <figcaption class="caption">First try to implement the CNN</figcaption>
+                </figure>
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
+                  <figcaption class="caption">Streamlit dashboard comparing runs and learning curves</figcaption>
+                </figure>
+              </div>
+            </article>
+    
           </div>
-        </article>
-
-        <!-- Project 4: Supervised Vision -->
-        <article class="project-article" id="ia-project-1">
-          <div class="proj-meta-header">
-            <div class="tag-container">
-              <span class="tag">Computer Vision</span>
-              <span class="tag">Google Scholar</span>
-              <span class="tag">ML Pipeline</span>
-            </div>
-            <span class="proj-year">AI Project #1</span>
-          </div>
-          <h3>🧠 Supervised Vision</h3>
-          <p>Implementation with a 70 hour-video tuto on google scholar an AI that have learned to reconize foods.</p>
+        </section>
+    
+    <!-- SECTION 4: PERSONALITY (The Van conversion) -->
+        <section id="van-conversion">
+          <span class="eyebrow">Behind the Code</span>
+          <h2 class="section-title">🚐 Personality</h2>
           
-          <div class="media-row">
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214526.png" alt="Supervised Vision 1" onerror="this.style.display='none'">
-              <figcaption class="caption">Summary output of my second model: desactivation of the gradient in order to reduce the trainable parameters</figcaption>
-            </figure>
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d4851539b943f516efef2fa0fa530906ff71a0ee/vision.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
-              <figcaption class="caption">Prediction on FashionMNIST</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Project 5: Duckiebot RL -->
-        <article class="project-article" id="ia-project-2">
-          <div class="proj-meta-header">
-            <div class="tag-container">
-              <span class="tag">Reinforcement Learning</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Isaac Lab</span>
-              <span class="tag">Actor-Critic SAC/PPO</span>
-            </div>
-            <span class="proj-year">AI Project #2</span>
-          </div>
-          <h3>🤖 Duckiebot RL</h3>
-          <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
-          
-          <div class="media-row">
-            <figure class="media-item">
-              <video class="project-video" autoplay loop muted playsinline>
-                <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20260710_115740_1%20(1).mp4" type="video/mp4">
-              </video>
-              <figcaption class="caption">Duckiebot line following</figcaption>
-            </figure>
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/2f216488172232404a07bd31b22841a641c82970/Capture%20d'%C3%A9cran%202026-07-10%20212649.png" alt="Duckiebot simulation" onerror="this.style.display='none'">
-              <figcaption class="caption">Obstacle avoidance policy training on Isaac Sim</figcaption>
-            </figure>
-          </div>
-
-          <div class="media-row">
-            <figure class="media-item">
-              <video class="project-video" autoplay loop muted playsinline>
-                <source src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/d4851539b943f516efef2fa0fa530906ff71a0ee/Projet%20vid%C3%A9o%205.mp4" type="video/mp4">
-              </video>
-              <figcaption class="caption">First try to implement the CNN</figcaption>
-            </figure>
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d%E2%80%99%C3%A9cran%202026-07-10%20215133.png" alt="Supervised Vision 2" onerror="this.style.display='none'">
-              <figcaption class="caption">Streamlit dashboard comparing runs and learning curves</figcaption>
-            </figure>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-<!-- SECTION 4: PERSONALITY (The Van conversion) -->
-    <section id="van-conversion">
-      <span class="eyebrow">Behind the Code</span>
-      <h2 class="section-title">🚐 Personality</h2>
-      
-      <div class="personality-text">
-        <p class="paragraph">
-          This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
-        </p>
-        <p class="paragraph">
-          While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
-        </p>
-        
-        <div class="media-row">
-            <!-- Lien corrigé (suppression de /blob/) -->
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20230624_182522%20(1).jpg" alt="Van conversion" onerror="this.style.display='none'">
-              <figcaption class="caption">First step of the conversion: building the rear cabinet in 2022</figcaption>
-            </figure>
+          <div class="personality-text">
+            <p class="paragraph">
+              This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
+            </p>
+            <p class="paragraph">
+              While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
+            </p>
             
-            <figure class="media-item">
-              <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Van tour" onerror="this.style.display='none'">
-              <figcaption class="caption">At the start of the Belle-Île tour</figcaption>
-            </figure>
-        </div>
-      </div>
-    </section>
-
-    <footer></footer>
-
-  </main>
+            <div class="media-row">
+                <!-- Lien corrigé (suppression de /blob/) -->
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/72a4edc1369b97d542c935f5e171613c8af7bd76/20230624_182522%20(1).jpg" alt="Van conversion" onerror="this.style.display='none'">
+                  <figcaption class="caption">First step of the conversion: building the rear cabinet in 2022</figcaption>
+                </figure>
+                
+                <figure class="media-item">
+                  <img class="project-img" src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/9632aa617c7be56130a5a62bb2fb1d54c0959622/Capture%20d'%C3%A9cran%202026-07-10%20214248.png" alt="Van tour" onerror="this.style.display='none'">
+                  <figcaption class="caption">At the start of the Belle-Île tour</figcaption>
+                </figure>
+            </div>
+          </div>
+        </section>
+    
+        <footer></footer>
+    
+      </main>
 
 
   <!-- ── JAVASCRIPT ── -->
