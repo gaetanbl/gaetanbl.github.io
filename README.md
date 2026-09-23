@@ -906,7 +906,11 @@
                 <span class="proj-year">AI Project #2</span>
               </div>
               <h3>🤖 Duckiebot RL</h3>
-              <p>My last intership (and the best :)), I have learned a lot of things: docker, RL, USD Isaac lab and sim, WSL, RL, Actor-Critic Methods: SAC and PPO...</p>
+              <p>🚀 Portfolio Text (English)Sim-to-Real Autonomous Guidance with Reinforcement LearningDuring my R&D internship at Scalian, I developed an end-to-end Reinforcement Learning (RL) pipeline to autonomously guide a physical robot (Duckiebot DB21J) using NVIDIA Isaac Sim, PyTorch (PPO), Docker, and ROS.   </p>
+              <p>Sim-to-Real Gap & Hardware Calibration: Fine-tuning motor trims, camera distortion, and sensor noise to ensure policies transferred reliably to physical hardware.  </p> 
+              <p>Complex Infrastructure: Overcoming WSL2 network isolation using ZeroTier, and deploying ONNX inference nodes on an embedded Jetson Nano.  </p>
+              <p>Reward Engineering: Designing balanced reward functions to prevent "reward hacking" (e.g., spinning in place or runaway speeds). </p>
+              <p>Building a modular, YAML-driven architecture and a Streamlit analytics dashboard was incredibly fulfilling—but the real thrill was watching the physical robot navigate complex maneuvers completely on its own, powered solely by a policy learned in a GPU simulator. Uniting deep RL, 3D physics simulation, embedded ROS, and MLOps was an absolute highlight of my engineering journey! </p>
               
               <div class="media-row">
                 <figure class="media-item">
