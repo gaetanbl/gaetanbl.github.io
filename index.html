@@ -40,7 +40,7 @@
       <div class="profile">
         <img src="https://raw.githubusercontent.com/gaetanbl/gaetanbl.github.io/833fa949a7780289bcf8465770c654755098b111/ma%20tete.png" alt="Photo de Gaëtan" class="profile-avatar">
         <h2>Gaëtan <em>Baylou-Lanot</em></h2>
-        <p>Robotic - AI - physics</p>
+        <p>Robotic - AI - Physics</p>
       </div>
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
@@ -88,10 +88,10 @@
     <!-- SECTION 1: HERO -->
     <section id="introduction">
       <div class="hero-text-block">
-        <span class="eyebrow">Mechanical &amp; Control Engineering · INSA Rennes</span>
+        <span class="eyebrow">Mechanical, Control &amp; Programming Engineering · INSA Rennes</span>
         <h1 class="hero-title">Hi, I'm <em>Gaëtan</em><span class="dot">.</span></h1>
         <p class="hero-sub">
-          Welcome to my portfolio: a brief introduction and a few projects, including my best work in the fields of programming and AI.
+          Welcome to my portfolio: a brief introduction and a few projects, including my best work in the fields of robotics and AI.
         </p>
         
         <div class="btn-container">
@@ -118,10 +118,10 @@
       <span class="eyebrow">Professional Tracks</span>
       <h2 class="section-title">The <em>GMA</em> Experience</h2>
       <p class="paragraph">
-        Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed summarize quite well what GMA is about.
+        Even though I am currently focusing on robotics and AI, I chose to pursue a Mechanical and Control Engineering degree (GMA) at INSA Rennes. I believe the various internships I have completed summarize quite well what GMA is about. I truly think that having technical knowledge can allow me to stand out from others purely in computer science.
       </p>
       <p class="paragraph">
-        At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, at <strong>Metallicadour</strong> (and through my academic continuation), I mastered the operation and control theory of industrial robotic arms. 
+        At <strong>XSun</strong>, I applied finite element analysis (FEA) and materials science knowledge. At <strong>ADDLAB (Decathlon)</strong>, my focus was on advanced 3D modeling and additive manufacturing. Finally, due to my intership at <strong>Metallicadour</strong> (buy by Safran afterward) and mainly through my academic studies, I mastered the operation and control theory of industrial robotic arms. And last, but not least, I’m going to discuss my last one at <strong>Scalian</strong> later in this page.
       </p>
       <p class="paragraph">
         Additionally, my curriculum has provided me with a strong foundation in advanced math and physics, including Computational Fluid Dynamics (CFD), Noise, Vibration, and Harshness (NVH) or Partial Differential Equations (PDE) for example.
@@ -261,12 +261,10 @@
                 <span class="proj-year">AI Project #2</span>
               </div>
               <h3>🤖 Duckiebot RL</h3>
-              <p>During my R&D internship at Scalian, I developed an end-to-end Reinforcement Learning (RL) pipeline to autonomously guide a physical robot (Duckiebot DB21J) using NVIDIA Isaac Sim, PyTorch (PPO), Docker, and ROS.
-              Sim-to-Real Gap & Hardware Calibration: Fine-tuning motor trims, camera distortion, and sensor noise to ensure policies transferred reliably to physical hardware.  </p> 
-              <p>Complex Infrastructure: Overcoming WSL2 network isolation using ZeroTier, and deploying ONNX inference nodes on an embedded Jetson Nano.  </p>
-              <p>Reward Engineering: Designing balanced reward functions to prevent "reward hacking" (e.g., spinning in place or runaway speeds). </p>
-              <p>Building a modular, YAML-driven architecture and a Streamlit analytics dashboard was incredibly fulfilling—but the real thrill was watching the physical robot navigate complex maneuvers completely on its own, powered solely by a policy learned in a GPU simulator. Uniting deep RL, 3D physics simulation, embedded ROS, and MLOps was an absolute highlight of my engineering journey! </p>
-              
+              <p>During my R&D internship at Scalian, I developed and continue to enhance an end-to-end Reinforcement Learning (RL) pipeline to autonomously guide a physical robot (Duckiebot DB21J with an embedded Jetson Nano) using various platforms like NVIDIA Isaac Sim, Lab, PyTorch (especially PPO), Docker, and ROS.</p> 
+              <p>During this work, I had the opportunity to tackle several challenges, including the Sim-to-Real gap, complex infrastructure setup, and classic reward hacking issues. Beyond these, my primary goal was to implement a CNN to transform how the robot perceives its environment. To achieve this, I used an Actor-Critic architecture leveraging a NatureCNN feature extractor. Exploring this solution was particularly engaging, from improving yellow line detection to boosting overall driving performance. One of the most rewarding aspects was modifying the input channels to stack multiple consecutive frames, allowing the model to perceive velocity and acceleration rather than just a static snapshot. This approach was directly inspired by the landmark research paper <em>"Human-level control through deep reinforcement learning"</em>, where frame stacking was introduced for Atari 2600 games because a single image couldn't reveal object trajectories.</p>              
+              <p>The real thrill was watching the physical robot navigate complex maneuvers completely on its own, powered solely by a policy learned in a GPU simulator. Uniting deep RL, 3D physics simulation, embedded ROS, and MLOps was an absolute highlight of my engineering journey!</p>
+        
               <div class="media-row">
                 <figure class="media-item">
                   <video class="project-video" autoplay loop muted playsinline>
@@ -304,7 +302,7 @@
           
           <div class="personality-text">
             <p class="paragraph">
-              This isn't my first project, but it is definitely one of the ones I'm most proud of. Over the course of three years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
+              This isn't my most impressive project, but it is definitely one of the ones I'm most proud of. Little by little, over two years, whenever I came home for the holidays, my grandfather and I worked together to convert a van from scratch so I could go on adventures. I am fond of sports, but what I love most is the call of the wild. Among my friends, I'm known for sleeping outside in -15°C weather or camping under a kayak to escape pouring rain.
             </p>
             <p class="paragraph">
               While my CV highlights my structured, technical side, people generally describe me as a highly sociable and cheerful person. My best memories come from these raw outdoor experiences—whether it's spending 5 days hiking around Belle-Île and interrailing across Europe with friends, or trekking alone for 4 days in the Dolomites sleeping under the stars.
