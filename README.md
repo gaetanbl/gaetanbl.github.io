@@ -1,4 +1,3 @@
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -668,8 +667,11 @@
     }
   </style>
 </head>
-<body>
 
+
+
+
+<body>
   <!-- ── MOBILE HEADER ── -->
   <header class="mobile-header">
     <div class="mobile-logo">G<em>B</em>.</div>
@@ -1044,4 +1046,3 @@
     });
   </script>
 </body>
-</html>
