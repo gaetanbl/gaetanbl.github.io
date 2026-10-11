@@ -58,7 +58,7 @@
     </div>
     
     <!-- Sidebar Footer -->
-    <div class="sidebar-footer">     
+    <div class="sidebar-footer">      
       <div class="discreet-contact-container" id="contact-minimal">
         <span class="eyebrow" style="margin-bottom: 0.2rem; font-size: 0.65rem; letter-spacing: 0.1em;">Get in Touch</span>
         <div class="contact-row-minimal">
@@ -75,11 +75,11 @@
             <span>View CV</span>
           </a>
 
-          <!-- Badge de visites visible (Corrigé et propre) -->
-          <div style="text-align: left; margin-top: 15px;">
-            <img src="https://api.visitorbadge.io/api/combined?path=gaetanbl.github.io&labelColor=%232c3e50&countColor=%2327ae60" 
+          <!-- Badge de visites visible (taille réduite et marges équilibrées) -->
+          <div style="text-align: left; margin: None;">
+            <img src="https://api.visitorbadge.io/api/combined?path=gaetanbl.github.io&labelColor=%232c3e50" 
                  alt="Nombre de visiteurs" 
-                 style="height: 14px; vertical-align: middle;">
+                 style="height: 12px; vertical-align: left;">
           </div>
           
         </div>
@@ -110,6 +110,13 @@
             Personality
           </a>
         </div>
+
+        <!--
+        <blockquote class="prompt-info">
+          <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i>
+          <span><strong>This page is currently being updated.</strong></span>
+        </blockquote>
+        -->
       </div>
     </section>
 
@@ -264,8 +271,8 @@
             <span class="proj-year">AI Project #2</span>
           </div>
           <h3>🤖 Duckiebot RL</h3>
-          <p>During my R&amp;D internship at Scalian, I developed and continue to enhance an end-to-end Reinforcement Learning (RL) pipeline to autonomously guide a physical robot (Duckiebot DB21J with an embedded Jetson Nano) using NVIDIA Isaac Sim, Lab, PyTorch (especially PPO), Docker, and ROS.</p> 
-          <p>During this work, I had the opportunity to tackle several challenges, including the Sim-to-Real gap, complex infrastructure setup, and classic reward hacking issues. Beyond these, my primary goal was to implement a CNN to transform how the robot perceives its environment. To achieve this, I used an Actor-Critic architecture leveraging a NatureCNN feature extractor. Exploring this solution was particularly engaging, from improving yellow line detection to boosting overall driving performance. One of the most rewarding aspects was modifying the input channels to stack multiple consecutive frames, allowing the model to perceive velocity and acceleration rather than just a static snapshot. This approach was directly inspired by the landmark research paper <em>"Human-level control through deep reinforcement learning"</em>, where frame stacking was introduced for Atari 2600 games because a single image couldn't reveal object trajectories.</p>               
+          <p>During my R&D internship at Scalian, I developed and continue to enhance an end-to-end Reinforcement Learning (RL) pipeline to autonomously guide a physical robot (Duckiebot DB21J with an embedded Jetson Nano) using NVIDIA Isaac Sim, Lab, PyTorch (especially PPO), Docker, and ROS.</p> 
+          <p>During this work, I had the opportunity to tackle several challenges, including the Sim-to-Real gap, complex infrastructure setup, and classic reward hacking issues. Beyond these, my primary goal was to implement a CNN to transform how the robot perceives its environment. To achieve this, I used an Actor-Critic architecture leveraging a NatureCNN feature extractor. Exploring this solution was particularly engaging, from improving yellow line detection to boosting overall driving performance. One of the most rewarding aspects was modifying the input channels to stack multiple consecutive frames, allowing the model to perceive velocity and acceleration rather than just a static snapshot. This approach was directly inspired by the landmark research paper <em>"Human-level control through deep reinforcement learning"</em>, where frame stacking was introduced for Atari 2600 games because a single image couldn't reveal object trajectories.</p>             
           <p>The real thrill was watching the physical robot navigate complex maneuvers completely on its own, powered solely by a policy learned in a GPU simulator. Uniting deep RL, 3D physics simulation, embedded ROS, and MLOps was an absolute highlight of my engineering journey!</p>
         
           <div class="media-row">
