@@ -317,7 +317,7 @@ section, .project-article {
 .content-wrapper {
   margin-left: 290px;
   padding: 4rem 3.5rem; 
-  max-width: 1200px; /* Limite la largeur globale pour un rendu pro */
+  max-width: 1000px; /* Limite la largeur globale pour un rendu pro */
   width: calc(100% - 290px); /* S'adapte à la sidebar fixe */
   margin-right: auto;
   position: relative;
