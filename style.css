@@ -1,5 +1,5 @@
 :root {
-  --bg-dark: #f8f6f1;          /* Premium Warm Cream/Beige Background */
+  --bg-dark: #f8f6f1;         /* Premium Warm Cream/Beige Background */
   --bg-panel: #fcfbfa;         /* Clean Off-White for Sidebar and Panels */
   --bg-panel-hover: #f1ede4;   /* Soft warm hover state */
   --accent: #ff5d38;           /* Tech Sunset Orange */
@@ -11,6 +11,7 @@
   --font-sans: 'Space Grotesk', sans-serif;
 }
 
+/* Correction du sélecteur universel (-) en (*) */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-dark);f
+  background-color: var(--bg-dark); /* Suppression du "f" parasite ici */
   color: var(--text-main);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -312,10 +313,13 @@ section, .project-article {
   cursor: pointer;
 }
 
+/* Conteneur principal bien centré et limité en largeur */
 .content-wrapper {
   margin-left: 290px;
   padding: 4rem 3.5rem; 
-  max-width: 100%;     
+  max-width: 1200px; /* Limite la largeur globale pour un rendu pro */
+  width: calc(100% - 290px); /* S'adapte à la sidebar fixe */
+  margin-right: auto;
   position: relative;
   z-index: 1;
 }
@@ -523,7 +527,8 @@ blockquote.prompt-info {
   margin-bottom: 1.8rem;
 }
 
-.project-img {
+/* Sécurité images / vidéos pour qu'elles restent dans les limites */
+.project-img, .project-video {
   width: 100%;
   max-height: 440px;
   object-fit: cover;
@@ -531,6 +536,7 @@ blockquote.prompt-info {
   margin-top: 1.5rem;
   border: 1px solid var(--border-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: block;
 }
 
 /* Side-by-side Media Row Layout */
@@ -599,6 +605,8 @@ footer {
 
   .content-wrapper {
     margin-left: 0;
+    width: 100%;
+    max-width: 100%;
     padding: 6rem 2rem 2rem 2rem;
   }
 
